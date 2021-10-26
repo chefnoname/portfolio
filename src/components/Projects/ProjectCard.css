@@ -2,21 +2,55 @@
   display: flex;
   justify-content: space-between;
   width: 95%;
-  height: 400px;
+  height: 500px;
   margin-left: 30px;
   background-color: #0a1929;
+  border-radius: 10px;
 }
 
 .projectDetails {
   display: flex;
   flex-direction: column;
-  background-color: greenyellow;
-  width: 400px;
+  /* background-color: greenyellow; */
+  width: 500px;
+  margin-top: 70px;
+  margin-left: 30px;
+}
+
+.projectScreenshot {
   margin-top: 50px;
-  margin-left: 70px;
+  margin-right: 30px;
 }
 
 .projectScreenshot img {
-  height: 200px;
+  height: 400px;
+  width: 600px;
+  object-fit: contain;
+}
+
+.linkToGithubPill {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  top: 30px;
+  left: 100px;
+  height: 40px;
+  background: white; /* default color */
+
+  /* "to left" / "to right" - affects initial color */
+  background: linear-gradient(to left, white 50%, #0a1929 50%) right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
   width: 300px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.linkToGithubPill:hover {
+  cursor: pointer;
+  background-position: left;
+}
+
+.linkToGithubPill:hover > .pillChild {
+  color: white !important;
 }

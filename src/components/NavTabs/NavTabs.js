@@ -32,6 +32,8 @@ const NavTabs = () => {
         justifyContent: "flex-end",
         background:
           "linear-gradient(90deg, rgba(10,25,41,1) 80%, rgba(100,120,124,1) 100%)",
+        position: "fixed",
+        zIndex: "100",
       }}
     >
       <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
@@ -42,6 +44,11 @@ const NavTabs = () => {
         />
         <LinkTab
           label="Projects"
+          href="#projects"
+          sx={{ fontWeight: "bolder", color: "white" }}
+        />
+        <LinkTab
+          label="Algorithims"
           href="#projects"
           sx={{ fontWeight: "bolder", color: "white" }}
         />
