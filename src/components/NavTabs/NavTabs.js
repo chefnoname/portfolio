@@ -30,9 +30,6 @@ const NavTabs = () => {
         width: "100%",
         display: "flex",
         justifyContent: "flex-end",
-        // background: "#0a1929",
-        // background: "rgb(10,25,41)",
-        background: "primary",
         background:
           "linear-gradient(90deg, rgba(10,25,41,1) 80%, rgba(100,120,124,1) 100%)",
       }}
@@ -45,7 +42,7 @@ const NavTabs = () => {
         />
         <LinkTab
           label="Projects"
-          href="/trash"
+          href="#projects"
           sx={{ fontWeight: "bolder", color: "white" }}
         />
         <LinkTab

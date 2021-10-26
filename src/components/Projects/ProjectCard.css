@@ -1,0 +1,22 @@
+.projectCard {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  height: 400px;
+  margin-left: 30px;
+  background-color: #0a1929;
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  background-color: greenyellow;
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+
+.projectScreenshot img {
+  height: 200px;
+  width: 300px;
+}

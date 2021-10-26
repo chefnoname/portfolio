@@ -1,5 +1,7 @@
 import NavTabs from "./components/NavTabs/NavTabs";
 import AboutMe from "./components/AboutMe/AboutMe";
+import Projects from "./components/Projects/Projects";
+
 import { ThemeProvider } from "@mui/material/styles";
 import { createTheme } from "@mui/material/styles";
 import { green, purple } from "@mui/material/colors";
@@ -18,10 +20,11 @@ const theme = createTheme({
 
 const App = () => {
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <NavTabs />
       <AboutMe />
-    </ThemeProvider>
+      <Projects />
+    </>
   );
 };
 
