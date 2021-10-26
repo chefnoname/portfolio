@@ -6,7 +6,7 @@ import img from "./assets/IMG_1566.jpg";
 const AboutMe = () => {
   return (
     <div>
-      <div className="aboutMe">
+      <div id="aboutMe">
         <div className="descriptionOfMe">
           <Typography
             variant="h4"
@@ -14,15 +14,22 @@ const AboutMe = () => {
           >
             Who is AbdiWali?
           </Typography>
-          <Typography variant="subtitle1" sx={{ color: "white" }}>
-            Roselle aims to bridge hoomans and technology. She is a Software
-            Engineer. She writes upon waking and reads prior to resting. Every
-            second and fourth Tuesday nights,
+          <Typography
+            variant="subtitle2"
+            sx={{ color: "white", fontSize: "16px" }}
+          >
+            Hi, my name is AbdiWali, or you can call me Abs! I'm a young,
+            bubbly, energetic individual who started his development journey in
+            the cool, breezy autumn of 2020.
             <br />
             <br />
-            she sneaks out of work (secretly) and watches (or delivers) speeches
-            at a local Toastmasters Club. She does a lot of things, so it’s
-            quite difficult to put what she does in a few words.
+            Being a self-taught developer, I had no structured way of learning
+            other than opening my laptop and cracking straight on. There's been
+            many ups and downs during this journey but I've climbed many hills
+            and have come out of the depths of Darius victorious (I hope).
+            <br />
+            <br />I like to think of myself as someone who is very comfortable
+            with being uncomfortable and I find discomfort in comfort.
           </Typography>
 
           <div className="downloadCV">

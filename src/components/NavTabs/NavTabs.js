@@ -5,24 +5,20 @@ import { useState } from "react";
 
 import "./NavTabs.css";
 
-function LinkTab(props) {
-  return (
-    <Tab
-      component="a"
-      onClick={(event) => {
-        event.preventDefault();
-      }}
-      {...props}
-    />
-  );
-}
-
 const NavTabs = () => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
+
+  const TAB_PROPS = [
+    ["About", "#aboutMe"],
+    ["Projects", "#projects"],
+    ["Algorithims", "#algorithims"],
+    ["Testimonials", "#testimonials"],
+    ["Contact", "#contact"],
+  ];
 
   return (
     <Box
@@ -37,31 +33,21 @@ const NavTabs = () => {
       }}
     >
       <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
-        <LinkTab
-          label="About"
-          href="/drafts"
-          sx={{ fontWeight: "bolder", color: "white" }}
-        />
-        <LinkTab
-          label="Projects"
-          href="#projects"
-          sx={{ fontWeight: "bolder", color: "white" }}
-        />
-        <LinkTab
-          label="Algorithims"
-          href="#projects"
-          sx={{ fontWeight: "bolder", color: "white" }}
-        />
-        <LinkTab
-          label="Testimonials"
-          href="/spam"
-          sx={{ fontWeight: "bolder", color: "white" }}
-        />
-        <LinkTab
-          label="Contact"
-          href="/spam"
-          sx={{ fontWeight: "bolder", color: "white" }}
-        />
+        {}
+        {TAB_PROPS.map(([label, href]) => (
+          <Tab
+            key={href}
+            component="a"
+            label={label}
+            href={href}
+            sx={{
+              fontWeight: "bolder",
+              color: "white",
+              scrollBehaviour: "smooth",
+            }}
+            className="inactive"
+          />
+        ))}
       </Tabs>
     </Box>
   );

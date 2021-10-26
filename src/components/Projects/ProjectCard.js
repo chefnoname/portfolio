@@ -1,8 +1,9 @@
 import Typography from "@mui/material/Typography";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Aos from "aos";
-import "aos/dist/aos.css";
+import { useEffect } from "react";
 
+import "aos/dist/aos.css";
 import "./ProjectCard.css";
 
 const ProjectCard = ({
@@ -12,9 +13,18 @@ const ProjectCard = ({
   projectInfoBottom,
   linkToGithub,
   projectScreenshot,
+  html,
+  css,
+  javaScript,
+  react,
+  bootstrap,
 }) => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+
   return (
-    <div className="projectCard">
+    <div data-aos="fade-up" className="projectCard">
       <div className="projectDetails">
         <Typography
           variant="subtitle1"
@@ -49,6 +59,14 @@ const ProjectCard = ({
           {projectInfoBottom}
         </Typography>
 
+        <div className="icons">
+          <span className="htmlIcon">{html}</span>
+          <span className="cssIcon">{css}</span>
+          <span className="javaScriptIcon">{javaScript}</span>
+          <span className="reactIcon">{react}</span>
+          <span className="bootstrapIcon">{bootstrap}</span>
+        </div>
+
         <div className="linkToGithubPill">
           <Typography
             variant="subtitle1"
@@ -62,7 +80,7 @@ const ProjectCard = ({
             }}
             className="pillChild"
           >
-            VIEW DEMO
+            VIEW PROJECT
           </Typography>
           <ArrowRightAltIcon
             sx={{
@@ -71,7 +89,7 @@ const ProjectCard = ({
               ml: 2,
               position: "relative",
               top: "-5px",
-              right: "30px",
+              right: "20px",
             }}
             className="pillChild"
           />

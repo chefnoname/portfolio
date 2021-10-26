@@ -1,4 +1,4 @@
-.aboutMe {
+#aboutMe {
   position: relative;
   background: rgb(10, 25, 41);
   background: linear-gradient(
@@ -14,7 +14,7 @@
 }
 
 /* where the magic happens */
-.aboutMe:after {
+#aboutMe:after {
   content: "";
   height: 150px;
   width: 100%;
@@ -31,7 +31,7 @@
   width: 40%;
   left: 60px;
   position: relative;
-  top: 20px;
+  top: 80px;
   text-align: center;
 }
 
@@ -40,12 +40,12 @@
   top: 20px;
   right: 180px;
   background: inherit;
-  height: 300px;
+  height: 500px;
   width: 300px;
 }
 
 .pictureOfMe img {
-  height: 250px;
+  height: 450px;
   width: 250px;
   margin-left: 25px;
   margin-top: 25px;

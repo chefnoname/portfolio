@@ -1,5 +1,8 @@
 import Typography from "@mui/material/Typography";
 import ProjectCard from "./ProjectCard";
+import { DiHtml5, DiCss3 } from "react-icons/di";
+import { SiJavascript, SiReact } from "react-icons/si";
+import { BsFillBootstrapFill } from "react-icons/bs";
 import Aos from "aos";
 import { useEffect } from "react";
 
@@ -14,7 +17,7 @@ import youtube from "./codeSnippets/youtube.png";
 
 const Projects = () => {
   useEffect(() => {
-    Aos.init({});
+    Aos.init({ duration: 1500 });
   }, []);
 
   const techDocObject = {
@@ -25,6 +28,9 @@ const Projects = () => {
     projectInfoBottom:
       "I drew inspiration from the numerous amount of times I've visited the MDN website.",
     projectScreenshot: techDoc,
+    HTMLIcon: <DiHtml5 />,
+    CSS3Icon: <DiCss3 />,
+    JSIcon: <SiJavascript />,
   };
 
   const tributePageObject = {
@@ -35,16 +41,22 @@ const Projects = () => {
     projectInfoBottom:
       "Each site has a video tour and shows where in the world they are (using the GoogleMaps API).",
     projectScreenshot: tributePage,
+    HTMLIcon: <DiHtml5 />,
+    CSS3Icon: <DiCss3 />,
+    JSIcon: <SiJavascript />,
   };
 
   const productLandingObject = {
     title: "Product Landing Page",
     nameOfProject: "Mercedes Benz (Reverse Engineered)",
     projectInfoTop:
-      "I chose to reverse engineer the Mercedes Benz homepage as it seemed very challenging and I thought it would really up my skills as a developer",
+      "I chose to clone the Mercedes Benz homepage as it seemed very challenging and I thought it would really up my skills as a developer",
     projectInfoBottom:
       "This was very fun to do, as there was a lot put into the actual homepage I wanted to get as close a replica as possible.",
     projectScreenshot: productLanding,
+    HTMLIcon: <DiHtml5 />,
+    CSS3Icon: <DiCss3 />,
+    JSIcon: <SiJavascript />,
   };
 
   const qubaEduObject = {
@@ -55,6 +67,10 @@ const Projects = () => {
     projectInfoBottom:
       "This showed me a different side to developing, I wasn't in the driving seat this time and I had to listen to instructions. ",
     projectScreenshot: qubaEdu,
+    HTMLIcon: <DiHtml5 />,
+    CSS3Icon: <DiCss3 />,
+    JSIcon: <SiJavascript />,
+    BSIcon: <BsFillBootstrapFill />,
   };
 
   const youtubeObject = {
@@ -65,6 +81,10 @@ const Projects = () => {
     projectInfoBottom:
       "It felt really rewarding that at first glance, friends couldn't tell that this was a clone!",
     projectScreenshot: youtube,
+    HTMLIcon: <DiHtml5 />,
+    CSS3Icon: <DiCss3 />,
+    JSIcon: <SiJavascript />,
+    ReactIcon: <SiReact />,
   };
 
   const PROJECT_ARR = [
@@ -75,12 +95,8 @@ const Projects = () => {
     tributePageObject,
   ];
 
-  //   projectInfoTop: "This was one of the assignments needed to complete freeCodeCamps Responsive Web Design Course.',
-  //   projectInfoBottom: 'I drew inspiration from the numerous amount of times Ive visited The MDN website.",
-  //   projectScreenshot: techDoc,
-
   return (
-    <div id="projects">
+    <div data-aos="fade-up" id="projects">
       <Typography
         variant="h2"
         sx={{
@@ -104,6 +120,11 @@ const Projects = () => {
             projectInfoTop={project.projectInfoTop}
             projectInfoBottom={project.projectInfoBottom}
             projectScreenshot={project.projectScreenshot}
+            html={project.HTMLIcon}
+            css={project.CSS3Icon}
+            javaScript={project.JSIcon}
+            react={project.ReactIcon}
+            bootstrap={project.BSIcon}
           />
         ))}
       </div>
