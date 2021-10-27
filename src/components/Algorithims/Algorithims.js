@@ -1,5 +1,10 @@
 import Typography from "@mui/material/Typography";
 import AlgorithimCard from "./AlgorithimCard";
+import TestimonialCard from "../Testimonials/TestimonialCard";
+
+import Aos from "aos";
+import { useEffect } from "react";
+
 import "./Algorithims.css";
 
 import caesarsCipher from "./codeSnippets/caesarsCipher.png";
@@ -9,6 +14,10 @@ import sumOfAllPrime from "./codeSnippets/sumOfAllPrime.png";
 import sumOfFibNum from "./codeSnippets/sumOfFibNum.png";
 
 const Algorithims = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   const caesarsCipherObj = {
     img: caesarsCipher,
     exerciseName: "Caesars Cipher",
@@ -63,7 +72,7 @@ const Algorithims = () => {
   ];
 
   return (
-    <div>
+    <div data-aos="fade-up">
       <Typography
         variant="h2"
         sx={{
@@ -93,3 +102,15 @@ const Algorithims = () => {
 };
 
 export default Algorithims;
+
+// const husseinTestimonyObj = {
+//   testimony: "lets hope this works, yikes",
+//   author: "Hussein O.",
+//   credentials: "Showroom Partner, Sofas & Stuff",
+// };
+
+//   <TestimonialCard
+//           testimony={husseinTestimonyObj.testimony}
+//           author={husseinTestimonyObj.author}
+//           credentials={husseinTestimonyObj.credentials}
+//         />

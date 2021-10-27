@@ -8,12 +8,19 @@ const TestimonialCard = ({ testimony, author, credentials }) => {
     <div className="testimonialContainer">
       <div className="testimonials">
         <ImQuotesLeft className="quoteLeft" />
-        <Typography
-          variant="h5"
-          sx={{ fontColor: "#0a1929", fontWeight: 300, width: "95%" }}
-        >
-          {testimony}
-        </Typography>
+        <div className="testimonyText">
+          <Typography
+            variant="h5"
+            sx={{
+              fontColor: "#0a1929",
+              fontWeight: 300,
+              width: "95%",
+              textAlign: "center",
+            }}
+          >
+            {testimony}
+          </Typography>
+        </div>
 
         <ImQuotesRight className="quoteRight" />
       </div>
@@ -24,6 +31,7 @@ const TestimonialCard = ({ testimony, author, credentials }) => {
             fontColor: "#0a1929",
             fontStyle: "italic",
             ml: 100,
+            mt: 3,
             fontSize: "18px",
           }}
         >

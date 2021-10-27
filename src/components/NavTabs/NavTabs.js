@@ -16,7 +16,6 @@ const NavTabs = () => {
     ["About", "#aboutMe"],
     ["Projects", "#projects"],
     ["Algorithims", "#algorithims"],
-    ["Testimonials", "#testimonials"],
     ["Contact", "#contact"],
   ];
 
@@ -33,7 +32,6 @@ const NavTabs = () => {
       }}
     >
       <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
-        {}
         {TAB_PROPS.map(([label, href]) => (
           <Tab
             key={href}

@@ -1,0 +1,40 @@
+.testimonialContainer {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  /* background-color: orangered; */
+  margin-left: 30px;
+}
+.testimonials {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  /* background-color: lawngreen; */
+  display: flex;
+  justify-content: space-evenly;
+}
+.testimonyText {
+  width: 70%;
+}
+
+.testimonyAhmed > .testimonyText {
+  /* margin-left: 30px !important; */
+  background-color: orangered !important;
+}
+
+.quoteLeft,
+.quoteRight {
+  position: relative;
+  font-size: 30px;
+}
+
+.quoteLeft {
+  bottom: 10px;
+  right: 30px;
+}
+
+.quoteRight {
+  position: relative;
+  top: 40px;
+  right: 20px;
+}

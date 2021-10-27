@@ -2,14 +2,15 @@ import NavTabs from "./components/NavTabs/NavTabs";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Algorithims from "./components/Algorithims/Algorithims";
-import Testimonials from "./components/Testimonials/Testimonials";
+import Contact from "./components/Contact/Contact";
 
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
-// import { ThemeProvider } from "@mui/material/styles";
-// import { createTheme } from "@mui/material/styles";
-// import { green, purple } from "@mui/material/colors";
 import "./App.css";
+
+const aliTestimonyObj = {
+  testimony: "NEED THIS TESTIMONY",
+  author: "Ali Muhammad",
+  credentials: "Teacher, Quba Education Centre",
+};
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
       <AboutMe />
       <Projects />
       <Algorithims />
-      <Testimonials />
+      <Contact />
     </>
   );
 };

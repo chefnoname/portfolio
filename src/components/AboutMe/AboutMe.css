@@ -72,3 +72,10 @@
   cursor: pointer;
   background-position: left;
 }
+
+.testimonyAhmed {
+  position: relative;
+  top: 130px;
+  /* left: 10px; */
+  /* background-color: orangered; */
+}

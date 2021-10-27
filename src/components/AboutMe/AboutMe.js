@@ -1,9 +1,17 @@
 import Typography from "@mui/material/Typography";
+import TestimonialCard from "../Testimonials/TestimonialCard";
 
 import "./AboutMe.css";
 import img from "./assets/IMG_1566.jpg";
 
 const AboutMe = () => {
+  const ahmedTestimonyObj = {
+    testimony:
+      "One of the best react projects I've seen on a Junior Developers portfolio",
+    author: "Ahmed A. Gadir",
+    credentials: "Mid-Level JS Developer, AG Grid",
+  };
+
   return (
     <div>
       <div id="aboutMe">
@@ -51,6 +59,13 @@ const AboutMe = () => {
         <div className="pictureOfMe">
           <img src={img} alt="me and samira" />
         </div>
+      </div>
+      <div className="testimonyAhmed">
+        <TestimonialCard
+          testimony={ahmedTestimonyObj.testimony}
+          author={ahmedTestimonyObj.author}
+          credentials={ahmedTestimonyObj.credentials}
+        />
       </div>
     </div>
   );
