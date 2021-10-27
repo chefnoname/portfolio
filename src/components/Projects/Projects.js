@@ -39,8 +39,9 @@ const Projects = () => {
     projectInfoTop:
       "As a proud Muslim, I wanted to pay homage to some of the well known holy sites of Islam.",
     projectInfoBottom:
-      "Each site has a video tour and shows where in the world they are (using the GoogleMaps API).",
+      "Using the GoogleMaps API, I was able to pin the location of each Holy Site.",
     projectScreenshot: tributePage,
+    linkToGithub: "https://chefnoname.github.io/FCC-Tribute-Page1/",
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,
@@ -54,6 +55,7 @@ const Projects = () => {
     projectInfoBottom:
       "This was very fun to do, as there was a lot put into the actual homepage I wanted to get as close a replica as possible.",
     projectScreenshot: productLanding,
+    linkToGithub: "https://chefnoname.github.io/",
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,
@@ -63,10 +65,11 @@ const Projects = () => {
     title: "Commissioned Work",
     nameOfProject: "Quba Education Centre",
     projectInfoTop:
-      "My first client! I was commisioned to make a website for their weekday and weekends after school program.",
+      "My first client! I was commisioned to make a website for their after school, extra-curricular program.",
     projectInfoBottom:
-      "This showed me a different side to developing, I wasn't in the driving seat this time and I had to listen to instructions. ",
+      "I was show a different side to developing, I wasn't in the driving seat this time and I had to bring the client's idea to life.",
     projectScreenshot: qubaEdu,
+    linkToGithub: "https://ahmedagadir.github.io/masjid-project/index.html",
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,
@@ -81,6 +84,7 @@ const Projects = () => {
     projectInfoBottom:
       "It felt really rewarding that at first glance, friends couldn't tell that this was a clone!",
     projectScreenshot: youtube,
+    linkToGithub: "https://objective-poitras-1d0fcc.netlify.app/",
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,
@@ -120,6 +124,7 @@ const Projects = () => {
             projectInfoTop={project.projectInfoTop}
             projectInfoBottom={project.projectInfoBottom}
             projectScreenshot={project.projectScreenshot}
+            linkToGithub={project.linkToGithub}
             html={project.HTMLIcon}
             css={project.CSS3Icon}
             javaScript={project.JSIcon}

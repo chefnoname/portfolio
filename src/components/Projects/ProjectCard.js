@@ -67,33 +67,35 @@ const ProjectCard = ({
           <span className="bootstrapIcon">{bootstrap}</span>
         </div>
 
-        <div className="linkToGithubPill">
-          <Typography
-            variant="subtitle1"
-            sx={{
-              color: "#0a1929",
-              fontWeight: "bolder",
-              textAlign: "center",
-              position: "relative",
-              top: "6px",
-              left: "30px",
-            }}
-            className="pillChild"
-          >
-            VIEW PROJECT
-          </Typography>
-          <ArrowRightAltIcon
-            sx={{
-              color: "#0a1929",
-              fontSize: "50px",
-              ml: 2,
-              position: "relative",
-              top: "-5px",
-              right: "20px",
-            }}
-            className="pillChild"
-          />
-        </div>
+        <a href={linkToGithub} target="_blank">
+          <div className="linkToGithubPill">
+            <Typography
+              variant="subtitle1"
+              sx={{
+                color: "#0a1929",
+                fontWeight: "bolder",
+                textAlign: "center",
+                position: "relative",
+                top: "6px",
+                left: "30px",
+              }}
+              className="pillChild"
+            >
+              VIEW PROJECT
+            </Typography>
+            <ArrowRightAltIcon
+              sx={{
+                color: "#0a1929",
+                fontSize: "50px",
+                ml: 2,
+                position: "relative",
+                top: "-5px",
+                right: "20px",
+              }}
+              className="pillChild"
+            />
+          </div>
+        </a>
       </div>
 
       <div className="projectScreenshot">
