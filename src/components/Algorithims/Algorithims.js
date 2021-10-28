@@ -13,7 +13,7 @@ import romanNumeralConverter from "./codeSnippets/romanNumeralConverter.png";
 import sumOfAllPrime from "./codeSnippets/sumOfAllPrime.png";
 import sumOfFibNum from "./codeSnippets/sumOfFibNum.png";
 
-const Algorithims = () => {
+const Algorithims = ({ theme }) => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -71,6 +71,13 @@ const Algorithims = () => {
     romanNumeralConverterObj,
   ];
 
+  const husseinTestimonyObj = {
+    testimony:
+      "Abs has both passion and dynamism. No challenge was too great. No target was too high. No amount of work hours was too much. whichever organisation he seeks to be a part of, they should relish the opportunity to have him on-board.",
+    author: "Hussein O.",
+    credentials: "Showroom Partner, Sofas & Stuff",
+  };
+
   return (
     <div data-aos="fade-up">
       <Typography
@@ -78,7 +85,7 @@ const Algorithims = () => {
         sx={{
           textDecoration: "underline",
           textAlign: "center",
-          color: "#0a1929",
+          color: `${theme}`,
           fontWeight: "bolder",
           letterSpacing: "10px",
           mb: 10,
@@ -94,23 +101,20 @@ const Algorithims = () => {
             exerciseName={algorithim.exerciseName}
             exerciseDetail={algorithim.exerciseDetail}
             githubLink={algorithim.githubLink}
+            theme={theme}
           />
         ))}
+      </div>
+      <div className="testimonyHussein">
+        <TestimonialCard
+          testimony={husseinTestimonyObj.testimony}
+          author={husseinTestimonyObj.author}
+          credentials={husseinTestimonyObj.credentials}
+          theme={theme}
+        />
       </div>
     </div>
   );
 };
 
 export default Algorithims;
-
-// const husseinTestimonyObj = {
-//   testimony: "lets hope this works, yikes",
-//   author: "Hussein O.",
-//   credentials: "Showroom Partner, Sofas & Stuff",
-// };
-
-//   <TestimonialCard
-//           testimony={husseinTestimonyObj.testimony}
-//           author={husseinTestimonyObj.author}
-//           credentials={husseinTestimonyObj.credentials}
-//         />

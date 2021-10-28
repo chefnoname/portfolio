@@ -6,20 +6,20 @@ import Contact from "./components/Contact/Contact";
 
 import "./App.css";
 
-const aliTestimonyObj = {
-  testimony: "NEED THIS TESTIMONY",
-  author: "Ali Muhammad",
-  credentials: "Teacher, Quba Education Centre",
-};
-
 const App = () => {
+  const colors = ["#0a1929", "#161C14", "#4F2F2F", "#7D1F00"];
+
+  const randomColor = colors[Math.floor(Math.random() * 5)];
+
+  console.log(randomColor);
+
   return (
     <>
-      <NavTabs />
-      <AboutMe />
-      <Projects />
-      <Algorithims />
-      <Contact />
+      <NavTabs theme={randomColor} />
+      <AboutMe theme={randomColor} />
+      <Projects theme={randomColor} />
+      <Algorithims theme={randomColor} />
+      <Contact theme={randomColor} />
     </>
   );
 };

@@ -3,16 +3,19 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 
 import "./TestimonialCard.css";
 
-const TestimonialCard = ({ testimony, author, credentials }) => {
+const TestimonialCard = ({ testimony, author, credentials, theme }) => {
+  const bgColor = {
+    color: theme,
+  };
   return (
     <div className="testimonialContainer">
       <div className="testimonials">
-        <ImQuotesLeft className="quoteLeft" />
+        <ImQuotesLeft className="quoteLeft" style={bgColor} />
         <div className="testimonyText">
           <Typography
             variant="h5"
             sx={{
-              fontColor: "#0a1929",
+              color: `${theme}`,
               fontWeight: 300,
               width: "95%",
               textAlign: "center",
@@ -22,13 +25,13 @@ const TestimonialCard = ({ testimony, author, credentials }) => {
           </Typography>
         </div>
 
-        <ImQuotesRight className="quoteRight" />
+        <ImQuotesRight className="quoteRight" style={bgColor} />
       </div>
       <div className="author">
         <Typography
           variant="subtitle1"
           sx={{
-            fontColor: "#0a1929",
+            color: `${theme}`,
             fontStyle: "italic",
             ml: 100,
             mt: 3,
@@ -40,7 +43,7 @@ const TestimonialCard = ({ testimony, author, credentials }) => {
         <Typography
           variant="subtitle1"
           sx={{
-            fontColor: "#0a1929",
+            color: `${theme}`,
             fontStyle: "italic",
             ml: 90,
             fontSize: "18px",

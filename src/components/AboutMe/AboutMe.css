@@ -1,6 +1,6 @@
 #aboutMe {
   position: relative;
-  background: rgb(10, 25, 41);
+  /* background: rgb(10, 25, 41); */
   background: linear-gradient(
     90deg,
     rgba(10, 25, 41, 1) 80%,
@@ -57,11 +57,8 @@
   top: 30px;
   left: 100px;
   height: 40px;
-  background: white; /* default color */
-
-  /* "to left" / "to right" - affects initial color */
-  background: linear-gradient(to left, white 50%, #0a1929 50%) right;
-  background-size: 200%;
+  /* background: linear-gradient(to left, white 50%, #0a1929 50%) right; */
+  /* background-size: 200%; */
   transition: 0.5s ease-out;
   width: 300px;
   border: 1px solid white;

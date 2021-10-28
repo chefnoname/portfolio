@@ -4,7 +4,18 @@ import TestimonialCard from "../Testimonials/TestimonialCard";
 import "./AboutMe.css";
 import img from "./assets/IMG_1566.jpg";
 
-const AboutMe = () => {
+const AboutMe = ({ theme }) => {
+  const bgColor = {
+    background: `linear-gradient(90deg, ${theme} 80%, rgba(100, 120, 124, 1) 100%)`,
+  };
+
+  const divBgColor = {
+    backgroundSize: "200%",
+    background: "white",
+    // background: `linear-gradient(to left, white 50%, ${theme} 50%) right`,
+    // "background:hover": { backgroundPosition: "left" },
+  };
+
   const ahmedTestimonyObj = {
     testimony:
       "One of the best react projects I've seen on a Junior Developers portfolio",
@@ -14,7 +25,7 @@ const AboutMe = () => {
 
   return (
     <div>
-      <div id="aboutMe">
+      <div id="aboutMe" style={bgColor}>
         <div className="descriptionOfMe">
           <Typography
             variant="h4"
@@ -27,24 +38,24 @@ const AboutMe = () => {
             sx={{ color: "white", fontSize: "16px" }}
           >
             Hi, my name is AbdiWali, or you can call me Abs! I'm a young,
-            bubbly, energetic individual who started his development journey in
-            the cool, breezy autumn of 2020.
+            friendly, energetic individual who started his development journey
+            in the cool, breezy autumn of 2020.
             <br />
             <br />
             Being a self-taught developer, I had no structured way of learning
             other than opening my laptop and cracking straight on. There's been
             many ups and downs during this journey but I've climbed many hills
-            and have come out of the depths of Darius victorious (I hope).
+            and have come out of the depths of Darius victorious.
             <br />
             <br />I like to think of myself as someone who is very comfortable
             with being uncomfortable and I find discomfort in comfort.
           </Typography>
 
-          <div className="downloadCV">
+          <div className="downloadCV" style={divBgColor}>
             <Typography
               variant="subtitle1"
               sx={{
-                color: "#0a1929",
+                color: `${theme}`,
                 fontWeight: "bolder",
                 textAlign: "center",
                 position: "relative",
@@ -65,6 +76,7 @@ const AboutMe = () => {
           testimony={ahmedTestimonyObj.testimony}
           author={ahmedTestimonyObj.author}
           credentials={ahmedTestimonyObj.credentials}
+          theme={theme}
         />
       </div>
     </div>

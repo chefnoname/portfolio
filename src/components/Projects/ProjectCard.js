@@ -18,13 +18,18 @@ const ProjectCard = ({
   javaScript,
   react,
   bootstrap,
+  theme,
 }) => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
 
+  const bgColor = {
+    background: theme,
+  };
+
   return (
-    <div data-aos="fade-up" className="projectCard">
+    <div data-aos="fade-up" className="projectCard" style={bgColor}>
       <div className="projectDetails">
         <Typography
           variant="subtitle1"
@@ -72,7 +77,7 @@ const ProjectCard = ({
             <Typography
               variant="subtitle1"
               sx={{
-                color: "#0a1929",
+                color: `${theme}`,
                 fontWeight: "bolder",
                 textAlign: "center",
                 position: "relative",
@@ -85,7 +90,7 @@ const ProjectCard = ({
             </Typography>
             <ArrowRightAltIcon
               sx={{
-                color: "#0a1929",
+                color: `${theme}`,
                 fontSize: "50px",
                 ml: 2,
                 position: "relative",

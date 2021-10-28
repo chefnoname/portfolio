@@ -17,11 +17,6 @@
   width: 70%;
 }
 
-.testimonyAhmed > .testimonyText {
-  /* margin-left: 30px !important; */
-  background-color: orangered !important;
-}
-
 .quoteLeft,
 .quoteRight {
   position: relative;

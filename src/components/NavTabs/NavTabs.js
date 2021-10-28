@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import "./NavTabs.css";
 
-const NavTabs = () => {
+const NavTabs = ({ theme }) => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
@@ -25,8 +25,7 @@ const NavTabs = () => {
         width: "100%",
         display: "flex",
         justifyContent: "flex-end",
-        background:
-          "linear-gradient(90deg, rgba(10,25,41,1) 80%, rgba(100,120,124,1) 100%)",
+        background: `linear-gradient(90deg, ${theme} 80%, rgba(100,120,124,1) 100%)`,
         position: "fixed",
         zIndex: "100",
       }}
@@ -52,3 +51,5 @@ const NavTabs = () => {
 };
 
 export default NavTabs;
+
+// rgba(10,25,41,1)

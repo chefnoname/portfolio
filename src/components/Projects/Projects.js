@@ -16,7 +16,7 @@ import productLanding from "./codeSnippets/productLanding.png";
 import qubaEdu from "./codeSnippets/qubaEdu.png";
 import youtube from "./codeSnippets/youtube.png";
 
-const Projects = () => {
+const Projects = ({ theme }) => {
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
@@ -114,7 +114,7 @@ const Projects = () => {
         sx={{
           textDecoration: "underline",
           textAlign: "center",
-          color: "#0a1929",
+          color: `${theme}`,
           fontWeight: "bolder",
           letterSpacing: "10px",
           mb: 10,
@@ -138,6 +138,7 @@ const Projects = () => {
             javaScript={project.JSIcon}
             react={project.ReactIcon}
             bootstrap={project.BSIcon}
+            theme={theme}
           />
         ))}
       </div>
@@ -146,6 +147,7 @@ const Projects = () => {
           testimony={emmanuelTestimonyObj.testimony}
           author={emmanuelTestimonyObj.author}
           credentials={emmanuelTestimonyObj.credentials}
+          theme={theme}
         />
       </div>
     </div>

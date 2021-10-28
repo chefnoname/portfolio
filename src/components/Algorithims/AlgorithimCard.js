@@ -6,7 +6,15 @@ import { useEffect } from "react";
 
 import "./AlgorithimCard.css";
 
-const AlgorithimCard = ({ img, exerciseName, exerciseDetail, githubLink }) => {
+const AlgorithimCard = ({
+  img,
+  exerciseName,
+  exerciseDetail,
+  githubLink,
+  theme,
+}) => {
+  // let cardClass = `algorithimCard`
+
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
@@ -17,7 +25,7 @@ const AlgorithimCard = ({ img, exerciseName, exerciseDetail, githubLink }) => {
         width="500px"
         height="350px"
         behavior="hover"
-        innerCardClass="algorithimCard"
+        innerCardClass={`algorithimCard ${theme}`}
       >
         <div className="frontCard">
           <img src={img} alt="" />
@@ -55,7 +63,7 @@ const AlgorithimCard = ({ img, exerciseName, exerciseDetail, githubLink }) => {
               <Typography
                 variant="subtitle1"
                 sx={{
-                  color: "#0a1929",
+                  color: `${theme}`,
                   fontWeight: "bolder",
                   textAlign: "center",
                   position: "relative",
@@ -68,7 +76,7 @@ const AlgorithimCard = ({ img, exerciseName, exerciseDetail, githubLink }) => {
               </Typography>
               <ArrowRightAltIcon
                 sx={{
-                  color: "#0a1929",
+                  color: `${theme}`,
                   fontSize: "50px",
                   ml: 2,
                   position: "relative",
