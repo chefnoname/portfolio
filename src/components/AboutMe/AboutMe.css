@@ -57,12 +57,40 @@
   top: 30px;
   left: 100px;
   height: 40px;
+  background: white;
   /* background: linear-gradient(to left, white 50%, #0a1929 50%) right; */
-  /* background-size: 200%; */
-  transition: 0.5s ease-out;
+  background-size: 200%;
   width: 300px;
   border: 1px solid white;
   border-radius: 10px;
+}
+
+.pillHighlightBlue {
+  background: linear-gradient(to right, white 50%, #0a1929 50%) left !important;
+  background-position: right !important;
+  background-size: 200% !important;
+  transition: 0.5s ease-out !important;
+}
+
+.pillHighlightGreen {
+  background: linear-gradient(to right, white 50%, #161c14 50%) left !important;
+  background-position: right !important;
+  background-size: 200% !important;
+  transition: 0.5s ease-out !important;
+}
+
+.pillHighlightPink {
+  background: linear-gradient(to right, white 50%, #4f2f2f 50%) left !important;
+  background-position: right !important;
+  background-size: 200% !important;
+  transition: 0.5s ease-out !important;
+}
+
+.pillHighlightOrange {
+  background: linear-gradient(to right, white 50%, #7d1f00 50%) left !important;
+  background-position: right !important;
+  background-size: 200% !important;
+  transition: 0.5s ease-out !important;
 }
 
 .downloadCV:hover {

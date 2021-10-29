@@ -1,5 +1,6 @@
 import Typography from "@mui/material/Typography";
 import TestimonialCard from "../Testimonials/TestimonialCard";
+import Pill from "../Pill/Pill";
 
 import "./AboutMe.css";
 import img from "./assets/IMG_1566.jpg";
@@ -7,13 +8,6 @@ import img from "./assets/IMG_1566.jpg";
 const AboutMe = ({ theme }) => {
   const bgColor = {
     background: `linear-gradient(90deg, ${theme} 80%, rgba(100, 120, 124, 1) 100%)`,
-  };
-
-  const divBgColor = {
-    backgroundSize: "200%",
-    background: "white",
-    // background: `linear-gradient(to left, white 50%, ${theme} 50%) right`,
-    // "background:hover": { backgroundPosition: "left" },
   };
 
   const ahmedTestimonyObj = {
@@ -31,7 +25,7 @@ const AboutMe = ({ theme }) => {
             variant="h4"
             sx={{ fontWeight: "bolder", color: "white", mb: 2 }}
           >
-            Who is AbdiWali?
+            Who is abdiWali?
           </Typography>
           <Typography
             variant="subtitle2"
@@ -50,21 +44,8 @@ const AboutMe = ({ theme }) => {
             <br />I like to think of myself as someone who is very comfortable
             with being uncomfortable and I find discomfort in comfort.
           </Typography>
-
-          <div className="downloadCV" style={divBgColor}>
-            <Typography
-              variant="subtitle1"
-              sx={{
-                color: `${theme}`,
-                fontWeight: "bolder",
-                textAlign: "center",
-                position: "relative",
-                top: "5px",
-                "&:hover": { color: "white" },
-              }}
-            >
-              DOWNLOAD CV +
-            </Typography>
+          <div id="aboutMePill">
+            <Pill theme={theme} pillTxt="DOWNLOAD CV +" />
           </div>
         </div>
         <div className="pictureOfMe">

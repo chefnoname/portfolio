@@ -1,5 +1,6 @@
 import Typography from "@mui/material/Typography";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import Pill from "../Pill/Pill";
+
 import Aos from "aos";
 import { useEffect } from "react";
 
@@ -73,32 +74,8 @@ const ProjectCard = ({
         </div>
 
         <a href={linkToGithub} target="_blank">
-          <div className="linkToGithubPill">
-            <Typography
-              variant="subtitle1"
-              sx={{
-                color: `${theme}`,
-                fontWeight: "bolder",
-                textAlign: "center",
-                position: "relative",
-                top: "6px",
-                left: "30px",
-              }}
-              className="pillChild"
-            >
-              VIEW PROJECT
-            </Typography>
-            <ArrowRightAltIcon
-              sx={{
-                color: `${theme}`,
-                fontSize: "50px",
-                ml: 2,
-                position: "relative",
-                top: "-5px",
-                right: "20px",
-              }}
-              className="pillChild"
-            />
+          <div id="projectCardPill">
+            <Pill theme={theme} pillTxt="VIEW PROJECT" />
           </div>
         </a>
       </div>

@@ -70,7 +70,7 @@ const Projects = ({ theme }) => {
     projectInfoBottom:
       "I was shown a different side to developing, I wasn't in the driving seat this time and I had to bring the client's idea to life.",
     projectScreenshot: qubaEdu,
-    linkToGithub: "https://ahmedagadir.github.io/masjid-project/index.html",
+    linkToGithub: "http://www.qubaeducation.com",
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,

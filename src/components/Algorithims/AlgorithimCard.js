@@ -1,8 +1,8 @@
 import Typography from "@mui/material/Typography";
-import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import Pill from "../Pill/Pill";
 import ReactCardFlipper from "react-card-flipper";
 import Aos from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import "./AlgorithimCard.css";
 
@@ -13,11 +13,25 @@ const AlgorithimCard = ({
   githubLink,
   theme,
 }) => {
-  // let cardClass = `algorithimCard`
+  const [newThemeClass, setNewThemeClass] = useState("");
+
+  const colors = ["#0a1929", "#161C14", "#4F2F2F", "#7D1F00"];
+  const themeClass = [
+    "algorithimBlue",
+    "algorithimGreen",
+    "algorithimPink",
+    "algorithimOrange",
+  ];
+
+  console.log(colors.indexOf(theme));
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
+
+    setNewThemeClass(themeClass[colors.indexOf(theme)]);
   }, []);
+
+  console.log("this is the newThemeClass", newThemeClass);
 
   return (
     <div data-aos="fade-up" className="algorithimCardContainer">
@@ -25,7 +39,7 @@ const AlgorithimCard = ({
         width="500px"
         height="350px"
         behavior="hover"
-        innerCardClass={`algorithimCard ${theme}`}
+        innerCardClass={`algorithimCard ${newThemeClass}`}
       >
         <div className="frontCard">
           <img src={img} alt="" />
@@ -60,31 +74,7 @@ const AlgorithimCard = ({
           </Typography>
           <a href={githubLink} className="githubLink" target="_blank">
             <div className="linkToGithubPill">
-              <Typography
-                variant="subtitle1"
-                sx={{
-                  color: `${theme}`,
-                  fontWeight: "bolder",
-                  textAlign: "center",
-                  position: "relative",
-                  top: "6px",
-                  left: "30px",
-                }}
-                className="pillChild"
-              >
-                VIEW CODE
-              </Typography>
-              <ArrowRightAltIcon
-                sx={{
-                  color: `${theme}`,
-                  fontSize: "50px",
-                  ml: 2,
-                  position: "relative",
-                  top: "-5px",
-                  right: "20px",
-                }}
-                className="pillChild"
-              />
+              <Pill theme={theme} pillTxt="VIEW CODE" />
             </div>
           </a>
         </div>

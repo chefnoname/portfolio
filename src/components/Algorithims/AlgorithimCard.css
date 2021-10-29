@@ -6,8 +6,23 @@
 
 .algorithimCard {
   border-radius: 10px;
-  background-color: #0a1929;
   box-shadow: 0 0 3px #ccc;
+}
+
+.algorithimBlue {
+  background-color: #0a1929;
+}
+
+.algorithimGreen {
+  background-color: #161c14;
+}
+
+.algorithimPink {
+  background-color: #4f2f2f;
+}
+
+.algorithimOrange {
+  background-color: #7d1f00;
 }
 
 .algorithimCard:hover {
