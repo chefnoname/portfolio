@@ -97,18 +97,16 @@ const Algorithims = ({ theme }) => {
       >
         ALGORITHIMS
       </Typography>
-      <div className="algorithimCardDisplay" id="algorithims">
+      <div className="algorithimCardDisplay">
         {ALGORITHIM_ARR.map((algorithim, i) => (
-          <div className={`pillEffect${i}`}>
-            <AlgorithimCard
-              key={algorithim.githubLink}
-              img={algorithim.img}
-              exerciseName={algorithim.exerciseName}
-              exerciseDetail={algorithim.exerciseDetail}
-              githubLink={algorithim.githubLink}
-              theme={theme}
-            />
-          </div>
+          <AlgorithimCard
+            key={algorithim.githubLink}
+            img={algorithim.img}
+            exerciseName={algorithim.exerciseName}
+            exerciseDetail={algorithim.exerciseDetail}
+            githubLink={algorithim.githubLink}
+            theme={theme}
+          />
         ))}
       </div>
       <div className="testimonyHussein">

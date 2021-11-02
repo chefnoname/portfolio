@@ -30,6 +30,23 @@ const AlgorithimCard = ({
     "algorithimConcrete",
   ];
 
+  const buttonThemeClass = [
+    "pillHighlightBlue",
+    "pillHighlightGreen",
+    "pillHighlightPink",
+    "pillHighlightConcrete",
+  ];
+
+  const handleMouseEnter = () => {
+    let pill = document.getElementById("algorithimPill");
+    pill.classList.add(buttonThemeClass[colors.indexOf(theme)]);
+  };
+
+  const handleMouseLeave = () => {
+    let pill = document.getElementById("algorithimPill");
+    pill.classList.remove(buttonThemeClass[colors.indexOf(theme)]);
+  };
+
   useEffect(() => {
     Aos.init({ duration: 1500 });
 
@@ -45,6 +62,18 @@ const AlgorithimCard = ({
         innerCardClass={`algorithimCard ${newThemeClass}`}
       >
         <div className="frontCard">
+          <CodeMirror
+            value={img}
+            options={{
+              mode: "javascript",
+              theme: "material",
+              lineNumbers: false,
+            }}
+            className="react-codemirror2 console"
+          />
+          <Pill theme={theme} pillTxt="CLICK FOR GITHUB LINK" />
+        </div>
+        <div className="backCard">
           <Typography
             variant="subtitle1"
             sx={{
@@ -72,20 +101,6 @@ const AlgorithimCard = ({
           >
             {exerciseDetail}
           </Typography>
-          <div className="algorithimPill">
-            <Pill theme={theme} pillTxt="VIEW CODE" />
-          </div>
-        </div>
-        <div className="backCard">
-          <CodeMirror
-            value={img}
-            options={{
-              mode: "javascript",
-              theme: "material",
-              lineNumbers: false,
-            }}
-            className="react-codemirror2 console"
-          />
           <div className="githubLink">
             <a href={githubLink} target="_blank">
               <BsGithub className="linkToGithub" />

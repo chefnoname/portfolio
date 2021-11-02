@@ -3,30 +3,27 @@ import Typography from "@mui/material/Typography";
 import "./Pill.css";
 
 const Pill = ({ theme, pillTxt }) => {
-  const colors = ["#0a1929", "#161C14", "#4F2F2F", "#262f35"];
+  // const colors = ["#0a1929", "#161C14", "#4F2F2F", "#262f35"];
 
-  const themeClass = [
-    "pillHighlightBlue",
-    "pillHighlightGreen",
-    "pillHighlightPink",
-    "pillHighlightConcrete",
-  ];
+  // const themeClass = [
+  //   "pillHighlightBlue",
+  //   "pillHighlightGreen",
+  //   "pillHighlightPink",
+  //   "pillHighlightConcrete",
+  // ];
 
-  const handleMouseEnter = () => {
-    let pill = document.getElementById("pill");
-    pill.classList.add(themeClass[colors.indexOf(theme)]);
-  };
+  // const handleMouseEnter = () => {
+  //   let pill = document.getElementById("algorithimPill");
+  //   pill.classList.add(themeClass[colors.indexOf(theme)]);
+  // };
 
-  const handleMouseLeave = () => {
-    let pill = document.getElementById("pill");
-    pill.classList.remove(themeClass[colors.indexOf(theme)]);
-  };
+  // const handleMouseLeave = () => {
+  //   let pill = document.getElementById("algorithimPill");
+  //   pill.classList.remove(themeClass[colors.indexOf(theme)]);
+  // };
+
   return (
-    <div
-      id="pill"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+    <div id="algorithimPill">
       <Typography
         variant="subtitle1"
         sx={{
@@ -35,7 +32,6 @@ const Pill = ({ theme, pillTxt }) => {
           textAlign: "center",
           position: "relative",
           top: "5px",
-          "&:hover": { color: "white" },
         }}
       >
         {pillTxt}

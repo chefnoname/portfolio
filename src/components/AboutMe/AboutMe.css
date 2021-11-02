@@ -87,3 +87,47 @@
   position: absolute;
   z-index: 100;
 }
+
+#pill {
+  position: relative;
+  top: 30px;
+  left: 100px;
+  height: 40px;
+  background: white;
+  background-size: 200%;
+  width: 300px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#pill:hover {
+  cursor: pointer;
+  background-position: left;
+}
+/* 
+.pillHighlightBlue {
+  background: linear-gradient(to right, white 50%, #0a1929 50%) left;
+  background-position: right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.pillHighlightGreen {
+  background: linear-gradient(to right, white 50%, #161c14 50%) left;
+  background-position: right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.pillHighlightPink {
+  background: linear-gradient(to right, white 50%, #4f2f2f 50%) left;
+  background-position: right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+}
+
+.pillHighlightConcrete {
+  background: linear-gradient(to right, white 50%, #262f35 50%) left;
+  background-position: right;
+  background-size: 200%;
+  transition: 0.5s ease-out;
+} */

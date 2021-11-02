@@ -55,3 +55,19 @@ a:hover {
 .console ::-webkit-scrollbar {
   display: block;
 }
+
+#algortihimPill {
+  position: relative;
+  top: 30px;
+  left: 100px;
+  height: 40px;
+  background: white;
+  background-size: 200%;
+  width: 300px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+#algortihimPill:hover {
+  cursor: pointer;
+  background-position: left;
+}

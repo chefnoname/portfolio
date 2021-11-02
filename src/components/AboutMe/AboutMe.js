@@ -10,6 +10,25 @@ const AboutMe = ({ theme }) => {
     background: `linear-gradient(90deg, ${theme} 80%, rgba(100, 120, 124, 1) 100%)`,
   };
 
+  const colors = ["#0a1929", "#161C14", "#4F2F2F", "#262f35"];
+
+  const themeClass = [
+    "pillHighlightBlue",
+    "pillHighlightGreen",
+    "pillHighlightPink",
+    "pillHighlightConcrete",
+  ];
+
+  const handleMouseEnter = () => {
+    let pill = document.getElementById("pill");
+    pill.classList.add(themeClass[colors.indexOf(theme)]);
+  };
+
+  const handleMouseLeave = () => {
+    let pill = document.getElementById("pill");
+    pill.classList.remove(themeClass[colors.indexOf(theme)]);
+  };
+
   const ahmedTestimonyObj = {
     testimony:
       "One of the best react projects I've seen on a Junior Developers portfolio",
@@ -46,8 +65,26 @@ const AboutMe = ({ theme }) => {
             <br />I like to think of myself as someone who is very comfortable
             with being uncomfortable and I find discomfort in comfort.
           </Typography>
-          <div id="aboutMePill">
-            <Pill theme={theme} pillTxt="DOWNLOAD CV +" />
+          {/* <Pill theme={theme} pillTxt="DOWNLOAD CV +" /> */}
+          <div
+            id="pill"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            className="aboutMePill"
+          >
+            <Typography
+              variant="subtitle1"
+              sx={{
+                color: `${theme}`,
+                fontWeight: "bolder",
+                textAlign: "center",
+                position: "relative",
+                top: "5px",
+                "&:hover": { color: "white" },
+              }}
+            >
+              DOWNLOAD CV +
+            </Typography>
           </div>
         </div>
         <div className="pictureOfMe">

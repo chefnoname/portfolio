@@ -42,7 +42,7 @@ const questions = {
     while(counter <= num){
       fibbonacciSequence.push(counter)
     
-      if(isOdd(counter)) { sumOfOddFibbonacciNumbers += counter}
+      if(isOdd(counter)) sumOfOddFibbonacciNumbers += counter
       counter = iterateFibbonacciSequence(counter)
         }
         return sumOfOddFibbonacciNumbers
