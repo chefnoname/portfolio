@@ -36,7 +36,7 @@ const AlgorithimCard = ({
       <ReactCardFlipper
         width="500px"
         height="350px"
-        behavior="hover"
+        behavior="click"
         innerCardClass={`algorithimCard ${newThemeClass}`}
       >
         <div className="frontCard">
