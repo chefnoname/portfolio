@@ -1,7 +1,7 @@
 import Typography from "@mui/material/Typography";
 import TestimonialCard from "../Testimonials/TestimonialCard";
 import Pill from "../Pill/Pill";
-
+import ParticlesBg from "../ParticlesBg/ParticlesBg";
 import "./AboutMe.css";
 import img from "./assets/IMG_1566.jpg";
 
@@ -18,7 +18,9 @@ const AboutMe = ({ theme }) => {
   };
 
   return (
-    <div>
+    <>
+      <ParticlesBg />
+
       <div id="aboutMe" style={bgColor}>
         <div className="descriptionOfMe">
           <Typography
@@ -60,7 +62,7 @@ const AboutMe = ({ theme }) => {
           theme={theme}
         />
       </div>
-    </div>
+    </>
   );
 };
 

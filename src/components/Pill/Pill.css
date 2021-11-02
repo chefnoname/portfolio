@@ -35,8 +35,8 @@
   transition: 0.5s ease-out;
 }
 
-.pillHighlightOrange {
-  background: linear-gradient(to right, white 50%, #7d1f00 50%) left;
+.pillHighlightConcrete {
+  background: linear-gradient(to right, white 50%, #262f35 50%) left;
   background-position: right;
   background-size: 200%;
   transition: 0.5s ease-out;

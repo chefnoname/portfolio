@@ -13,12 +13,13 @@ const ProjectCard = ({
   projectInfoTop,
   projectInfoBottom,
   linkToGithub,
-  projectScreenshot,
+  projectPreview,
   html,
   css,
   javaScript,
   react,
   bootstrap,
+  github,
   theme,
 }) => {
   useEffect(() => {
@@ -71,20 +72,28 @@ const ProjectCard = ({
           <span className="javaScriptIcon">{javaScript}</span>
           <span className="reactIcon">{react}</span>
           <span className="bootstrapIcon">{bootstrap}</span>
+          <span className="linkToGithub">
+            <a href={linkToGithub} target="_blank">
+              {github}
+            </a>
+          </span>
         </div>
 
-        <a href={linkToGithub} target="_blank">
-          <div id="projectCardPill">
-            <Pill theme={theme} pillTxt="VIEW PROJECT" />
-          </div>
-        </a>
+        <div></div>
       </div>
 
       <div className="projectScreenshot">
-        <img src={projectScreenshot} alt="" />
+        <iframe
+          src={projectPreview}
+          title="youtube_proj"
+          allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+        ></iframe>
       </div>
     </div>
   );
 };
 
 export default ProjectCard;
+
+//  https://codesandbox.io/embed/github/chefnoname/youtube_clone/tree/main/?fontsize=14&theme=dark&view=preview

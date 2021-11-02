@@ -15,15 +15,13 @@ const AlgorithimCard = ({
 }) => {
   const [newThemeClass, setNewThemeClass] = useState("");
 
-  const colors = ["#0a1929", "#161C14", "#4F2F2F", "#7D1F00"];
+  const colors = ["#0a1929", "#161C14", "#4F2F2F", "#262f35"];
   const themeClass = [
     "algorithimBlue",
     "algorithimGreen",
     "algorithimPink",
-    "algorithimOrange",
+    "algorithimConcrete",
   ];
-
-  console.log(colors.indexOf(theme));
 
   useEffect(() => {
     Aos.init({ duration: 1500 });

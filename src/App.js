@@ -7,7 +7,7 @@ import Contact from "./components/Contact/Contact";
 import "./App.css";
 
 const App = () => {
-  const colors = ["#0a1929", "#161C14", "#4F2F2F", "#7D1F00"];
+  const colors = ["#0a1929", "#161C14", "#4F2F2F", "#262f35"];
 
   const randomColor = colors[Math.floor(Math.random() * 4)];
 

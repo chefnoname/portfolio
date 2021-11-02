@@ -1,11 +1,4 @@
 #aboutMe {
-  position: relative;
-  /* background: rgb(10, 25, 41); */
-  background: linear-gradient(
-    90deg,
-    rgba(10, 25, 41, 1) 80%,
-    rgba(100, 120, 124, 1) 100%
-  );
   overflow: visible;
   padding: 80px 0;
   z-index: 1;
@@ -13,21 +6,7 @@
   justify-content: space-between;
 }
 
-/* where the magic happens */
-#aboutMe:after {
-  content: "";
-  height: 150px;
-  width: 100%;
-  position: absolute;
-  background: inherit;
-  z-index: -1;
-  bottom: 0;
-  transform-origin: right;
-  transform: skewY(-4deg);
-}
-
 .descriptionOfMe {
-  /* background-color: greenyellow; */
   width: 40%;
   left: 60px;
   position: relative;
@@ -86,8 +65,8 @@
   transition: 0.5s ease-out !important;
 }
 
-.pillHighlightOrange {
-  background: linear-gradient(to right, white 50%, #7d1f00 50%) left !important;
+.pillHighlightConcrete {
+  background: linear-gradient(to right, white 50%, #262f35 50%) left !important;
   background-position: right !important;
   background-size: 200% !important;
   transition: 0.5s ease-out !important;
@@ -103,4 +82,8 @@
   top: 130px;
   /* left: 10px; */
   /* background-color: orangered; */
+}
+.particles {
+  position: absolute;
+  z-index: 100;
 }

@@ -1,20 +1,15 @@
 import Typography from "@mui/material/Typography";
 import ProjectCard from "./ProjectCard";
 import TestimonialCard from "../Testimonials/TestimonialCard";
+
 import { DiHtml5, DiCss3 } from "react-icons/di";
 import { SiJavascript, SiReact } from "react-icons/si";
-import { BsFillBootstrapFill } from "react-icons/bs";
+import { BsFillBootstrapFill, BsGithub } from "react-icons/bs";
 import Aos from "aos";
 import { useEffect } from "react";
 
 import "aos/dist/aos.css";
 import "./Projects.css";
-
-import techDoc from "./codeSnippets/techDoc.png";
-import tributePage from "./codeSnippets/tributePage.png";
-import productLanding from "./codeSnippets/productLanding.png";
-import qubaEdu from "./codeSnippets/qubaEdu.png";
-import youtube from "./codeSnippets/youtube.png";
 
 const Projects = ({ theme }) => {
   useEffect(() => {
@@ -28,10 +23,11 @@ const Projects = ({ theme }) => {
       "This was one of the assignments needed to complete freeCodeCamp's Responsive Web Design Course.",
     projectInfoBottom:
       "I drew inspiration from the numerous amount of times I've visited the MDN website.",
-    projectScreenshot: techDoc,
+    linkToGithub: "https://github.com/chefnoname/TechDocFCC",
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,
+    githubIcon: <BsGithub />,
   };
 
   const tributePageObject = {
@@ -41,11 +37,13 @@ const Projects = ({ theme }) => {
       "As a proud Muslim, I wanted to pay homage to some of the well known holy sites of my faith.",
     projectInfoBottom:
       "Using the GoogleMaps API, I was able to pin the location of each Holy Site.",
-    projectScreenshot: tributePage,
-    linkToGithub: "https://chefnoname.github.io/FCC-Tribute-Page1/",
+    projectPreview:
+      "https://codesandbox.io/embed/blissful-austin-5ic4y?fontsize=14&hidenavigation=1&theme=dark",
+    linkToGithub: "https://github.com/chefnoname/FCC-Tribute-Page1",
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,
+    githubIcon: <BsGithub />,
   };
 
   const productLandingObject = {
@@ -55,11 +53,13 @@ const Projects = ({ theme }) => {
       "I chose to clone the Mercedes Benz homepage as it seemed very challenging and I thought it would really up my skills as a developer",
     projectInfoBottom:
       "This was very fun to do, as there was a lot put into the actual homepage I wanted to get as close a replica as possible.",
-    projectScreenshot: productLanding,
-    linkToGithub: "https://chefnoname.github.io/",
+    projectPreview:
+      "https://codesandbox.io/embed/great-noether-9eo6l?fontsize=14&hidenavigation=1&theme=dark",
+    linkToGithub: "https://github.com/chefnoname/productLandingPage",
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,
+    githubIcon: <BsGithub />,
   };
 
   const qubaEduObject = {
@@ -69,12 +69,14 @@ const Projects = ({ theme }) => {
       "My first client! I was commisioned to make a website for their after school, extra-curricular program.",
     projectInfoBottom:
       "I was shown a different side to developing, I wasn't in the driving seat this time and I had to bring the client's idea to life.",
-    projectScreenshot: qubaEdu,
-    linkToGithub: "http://www.qubaeducation.com",
+    projectPreview:
+      "https://codesandbox.io/embed/admiring-breeze-0oecj?fontsize=14&hidenavigation=1&theme=dark",
+    linkToGithub: "https://github.com/AhmedAGadir/masjid-project",
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,
     BSIcon: <BsFillBootstrapFill />,
+    githubIcon: <BsGithub />,
   };
 
   const youtubeObject = {
@@ -84,12 +86,14 @@ const Projects = ({ theme }) => {
       "This is the largest app I've written. My Magnum Opus. writing this app I got to apply almost everything I've learnt so far in React.js",
     projectInfoBottom:
       "It felt really rewarding that at first glance, friends couldn't tell that this was a clone!",
-    projectScreenshot: youtube,
-    linkToGithub: "https://objective-poitras-1d0fcc.netlify.app/",
+    projectPreview:
+      "https://codesandbox.io/embed/github/chefnoname/youtube_clone/tree/main/?fontsize=14&theme=dark&view=preview",
+    linkToGithub: "https://github.com/chefnoname/youtube_clone",
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,
     ReactIcon: <SiReact />,
+    githubIcon: <BsGithub />,
   };
 
   const PROJECT_ARR = [
@@ -125,21 +129,24 @@ const Projects = ({ theme }) => {
 
       <div className="projectCards">
         {PROJECT_ARR.map((project, i) => (
-          <ProjectCard
-            key={i}
-            title={project.title}
-            nameOfProject={project.nameOfProject}
-            projectInfoTop={project.projectInfoTop}
-            projectInfoBottom={project.projectInfoBottom}
-            projectScreenshot={project.projectScreenshot}
-            linkToGithub={project.linkToGithub}
-            html={project.HTMLIcon}
-            css={project.CSS3Icon}
-            javaScript={project.JSIcon}
-            react={project.ReactIcon}
-            bootstrap={project.BSIcon}
-            theme={theme}
-          />
+          <>
+            <ProjectCard
+              key={i}
+              title={project.title}
+              nameOfProject={project.nameOfProject}
+              projectInfoTop={project.projectInfoTop}
+              projectInfoBottom={project.projectInfoBottom}
+              projectPreview={project.projectPreview}
+              linkToGithub={project.linkToGithub}
+              html={project.HTMLIcon}
+              css={project.CSS3Icon}
+              javaScript={project.JSIcon}
+              react={project.ReactIcon}
+              bootstrap={project.BSIcon}
+              github={project.githubIcon}
+              theme={theme}
+            />
+          </>
         ))}
       </div>
       <div className="testimonyEmmanuel">
