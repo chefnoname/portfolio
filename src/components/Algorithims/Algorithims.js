@@ -2,27 +2,31 @@ import Typography from "@mui/material/Typography";
 import AlgorithimCard from "./AlgorithimCard";
 import TestimonialCard from "../Testimonials/TestimonialCard";
 
+import questions from "./Questions/questions";
+
 import Aos from "aos";
 import { useEffect } from "react";
 
 import "./Algorithims.css";
-
-import caesarsCipher from "./codeSnippets/caesarsCipher.png";
-import palindromeChecker from "./codeSnippets/palindromeChecker.png";
-import romanNumeralConverter from "./codeSnippets/romanNumeralConverter.png";
-import sumOfAllPrime from "./codeSnippets/sumOfAllPrime.png";
-import sumOfFibNum from "./codeSnippets/sumOfFibNum.png";
 
 const Algorithims = ({ theme }) => {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
 
+  const {
+    caesarsCipher,
+    palindromeChecker,
+    romanNumeralConverter,
+    sumOfAllPrime,
+    sumOfFibNum,
+  } = questions;
+
   const caesarsCipherObj = {
     img: caesarsCipher,
     exerciseName: "Caesars Cipher",
     exerciseDetail:
-      "Write a function which takes a ROT13 encoded string as input and returns a decoded string. All letters will be uppercase. Do not transform any non-alphabetic character (i.e. spaces, punctuation), but do pass them on.",
+      "Write a function which takes a ROT13 encoded string as input and returns a decoded string.",
     githubLink:
       "https://github.com/chefnoname/codingChallenges/blob/main/FCC_Algorithms/caesarsCipher.js",
   };
@@ -31,7 +35,7 @@ const Algorithims = ({ theme }) => {
     img: palindromeChecker,
     exerciseName: "Palindrome Checker",
     exerciseDetail:
-      "Return true if the given string is a palindrome. Otherwise, return false. A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.",
+      "A palindrome is a word or sentence that's spelled the same way both forward and backward.",
     githubLink:
       "https://github.com/chefnoname/codingChallenges/blob/main/FCC_Algorithms/palindromeChecker.js",
   };
@@ -49,7 +53,7 @@ const Algorithims = ({ theme }) => {
     img: sumOfAllPrime,
     exerciseName: "Sum of all Prime Number",
     exerciseDetail:
-      "A prime number is a whole number greater than 1 with exactly two divisors: 1 and itself. Rewrite sumPrimes so it returns the sum of all prime numbers that are less than or equal to num.",
+      "Rewrite sumPrimes so it returns the sum of all prime numbers that are less than or equal to num.",
     githubLink:
       "https://github.com/chefnoname/codingChallenges/blob/main/intermediateAlgorithims/sumOfAllPrime.js",
   };
@@ -94,15 +98,17 @@ const Algorithims = ({ theme }) => {
         ALGORITHIMS
       </Typography>
       <div className="algorithimCardDisplay" id="algorithims">
-        {ALGORITHIM_ARR.map((algorithim) => (
-          <AlgorithimCard
-            key={algorithim.githubLink}
-            img={algorithim.img}
-            exerciseName={algorithim.exerciseName}
-            exerciseDetail={algorithim.exerciseDetail}
-            githubLink={algorithim.githubLink}
-            theme={theme}
-          />
+        {ALGORITHIM_ARR.map((algorithim, i) => (
+          <div className={`pillEffect${i}`}>
+            <AlgorithimCard
+              key={algorithim.githubLink}
+              img={algorithim.img}
+              exerciseName={algorithim.exerciseName}
+              exerciseDetail={algorithim.exerciseDetail}
+              githubLink={algorithim.githubLink}
+              theme={theme}
+            />
+          </div>
         ))}
       </div>
       <div className="testimonyHussein">

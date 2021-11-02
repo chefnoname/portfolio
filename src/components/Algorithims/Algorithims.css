@@ -3,3 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
+.algorithimCardDisplay .pillEffect0 .algorithimPill:hover {
+  background-color: blue !important;
+}
