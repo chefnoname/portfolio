@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <>
-      <NavTabs theme={randomColor} />
+      {/* <NavTabs theme={randomColor} /> */}
       <AboutMe theme={randomColor} />
       <Projects theme={randomColor} />
       <Algorithims theme={randomColor} />

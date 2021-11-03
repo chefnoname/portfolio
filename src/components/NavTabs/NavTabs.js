@@ -11,6 +11,7 @@ const NavTabs = ({ theme }) => {
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
+    console.log(value);
   };
 
   const TAB_PROPS = [
@@ -32,7 +33,12 @@ const NavTabs = ({ theme }) => {
       }}
     >
       <img src={logo} className="App-logo" alt="" />
-      <Tabs value={value} onChange={handleChange} aria-label="nav tabs example">
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        aria-label="nav tabs"
+        textColor="none"
+      >
         {TAB_PROPS.map(([label, href]) => (
           <Tab
             key={href}
@@ -54,5 +60,3 @@ const NavTabs = ({ theme }) => {
 };
 
 export default NavTabs;
-
-// rgba(10,25,41,1)
