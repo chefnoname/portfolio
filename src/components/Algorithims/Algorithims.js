@@ -83,7 +83,7 @@ const Algorithims = ({ theme }) => {
   };
 
   return (
-    <div data-aos="fade-up">
+    <div data-aos="fade-up" id="algorithims">
       <Typography
         variant="h2"
         sx={{
