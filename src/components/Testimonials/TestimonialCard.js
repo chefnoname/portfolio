@@ -37,6 +37,7 @@ const TestimonialCard = ({ testimony, author, credentials, theme }) => {
             mt: 3,
             fontSize: "18px",
           }}
+          className="authorNameMediaQuery"
         >
           - {author}
         </Typography>
@@ -49,6 +50,7 @@ const TestimonialCard = ({ testimony, author, credentials, theme }) => {
             fontSize: "18px",
             fontWeight: "bolder",
           }}
+          className="credentialsNameMediaQuery"
         >
           {credentials}
         </Typography>

@@ -54,3 +54,15 @@
   color: rgb(37, 247, 247);
   margin-top: 0px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 430px) {
+  .seeMore {
+    left: -40px;
+    top: 170px;
+  }
+  .contactsMediaQueries {
+    font-size: 20px !important;
+    width: 300px !important;
+    margin-left: 45px !important;
+  }
+}

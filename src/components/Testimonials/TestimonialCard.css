@@ -33,3 +33,30 @@
   top: 40px;
   right: 20px;
 }
+
+@media screen and (max-width: 320px) {
+  .testimonialContainer {
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .testimonyText {
+    margin-right: 20px;
+  }
+
+  .quoteRight {
+    top: 150px;
+  }
+
+  .author {
+    margin-left: 10px;
+  }
+
+  .authorNameMediaQuery {
+    margin-left: 200px !important;
+  }
+
+  .credentialsNameMediaQuery {
+    margin-left: 10px !important;
+  }
+}

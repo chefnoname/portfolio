@@ -94,6 +94,7 @@ const Algorithims = ({ theme }) => {
           letterSpacing: "10px",
           mb: 10,
         }}
+        className="titleMediaQuery algortihimsMediaQuery"
       >
         ALGORITHIMS
       </Typography>

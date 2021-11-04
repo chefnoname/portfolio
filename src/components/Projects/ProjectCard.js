@@ -42,8 +42,9 @@ const ProjectCard = ({
             fontWeight: 700,
             color: "white",
           }}
+          className="projectTitleMediaQuery"
         >
-          {title}
+          {title}:
         </Typography>
         <Typography
           variant="subtitle2"
@@ -53,16 +54,22 @@ const ProjectCard = ({
             fontWeight: "bold",
             color: "white",
           }}
+          className="projectNameMediaQuery"
         >
           {nameOfProject}
         </Typography>
         <Typography
           paragraph
           sx={{ textAlign: "center", mt: 3, color: "white" }}
+          className="projectDetailMediaQuery"
         >
           {projectInfoTop}
         </Typography>
-        <Typography paragraph sx={{ textAlign: "center", color: "white" }}>
+        <Typography
+          paragraph
+          sx={{ textAlign: "center", color: "white" }}
+          className="projectDetailMediaQuery"
+        >
           {projectInfoBottom}
         </Typography>
 

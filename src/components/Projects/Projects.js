@@ -123,6 +123,7 @@ const Projects = ({ theme }) => {
           letterSpacing: "10px",
           mb: 10,
         }}
+        className="titleMediaQuery"
       >
         PROJECTS
       </Typography>

@@ -31,7 +31,6 @@
 .console {
   width: 500px;
   /* height: 350px; */
-  border-radius: 10px !important;
   /* object-fit: contain; */
 }
 
@@ -70,4 +69,25 @@ a:hover {
 #algortihimPill:hover {
   cursor: pointer;
   background-position: left;
+}
+
+@media screen and (max-width: 320px) {
+  .algorithimCardContainer {
+    margin-bottom: 30px;
+    height: 400px;
+    width: 300px;
+  }
+
+  .algorithimCard {
+    width: 300px !important;
+  }
+
+  .console {
+    width: 300px;
+  }
+
+  #algorithimPill {
+    left: 15px;
+    width: 270px;
+  }
 }

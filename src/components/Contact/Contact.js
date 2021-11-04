@@ -27,6 +27,7 @@ const Contact = ({ theme }) => {
             fontWeight: "bolder",
             width: "400px",
           }}
+          className="contactsMediaQueries"
         >
           Want to see more? Get in Touch
         </Typography>
