@@ -51,6 +51,7 @@ const AboutMe = ({ theme }) => {
           <Typography
             variant="subtitle2"
             sx={{ color: "white", fontSize: "16px" }}
+            className="introOfMe"
           >
             Hi, my name is AbdiWali, or you can call me Abs! I'm a young,
             friendly, energetic individual who started his development journey

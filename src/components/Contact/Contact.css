@@ -66,3 +66,20 @@
     margin-left: 45px !important;
   }
 }
+
+@media screen and (min-width: 760px) and (max-width: 1440px) {
+  .seeMore {
+    left: 90px;
+    top: 170px;
+  }
+  .contactsMediaQueries {
+    font-size: 40px !important;
+    width: 470px !important;
+    margin-left: 45px !important;
+  }
+
+  .contactLinks {
+    width: 585px;
+    margin-top: 20px;
+  }
+}
