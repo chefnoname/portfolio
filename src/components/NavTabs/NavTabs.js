@@ -1,4 +1,4 @@
-import logo from "../../ABS-COL2-PNG.png";
+import logo from "../../logo.png";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -33,12 +33,7 @@ const NavTabs = ({ theme }) => {
       }}
     >
       <img src={logo} className="App-logo" alt="" />
-      <Tabs
-        value={value}
-        onChange={handleChange}
-        aria-label="nav tabs"
-        textColor="none"
-      >
+      <Tabs value={value} onChange={handleChange} aria-label="nav tabs">
         {TAB_PROPS.map(([label, href]) => (
           <Tab
             key={href}

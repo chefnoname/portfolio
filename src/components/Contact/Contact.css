@@ -1,7 +1,7 @@
 .seeMore {
   position: relative;
   left: 450px;
-  top: 400px;
+  top: 350px;
   width: 500px;
   /* height: 300px; */
 }
@@ -67,7 +67,7 @@
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1440px) {
+@media screen and (min-width: 760px) and (max-width: 1200px) {
   .seeMore {
     left: 90px;
     top: 170px;

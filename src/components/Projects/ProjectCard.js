@@ -79,11 +79,6 @@ const ProjectCard = ({
           <span className="javaScriptIcon">{javaScript}</span>
           <span className="reactIcon">{react}</span>
           <span className="bootstrapIcon">{bootstrap}</span>
-          <span className="linkToGithub">
-            <a href={linkToGithub} target="_blank">
-              {github}
-            </a>
-          </span>
         </div>
 
         <div></div>
@@ -96,6 +91,9 @@ const ProjectCard = ({
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
         ></iframe>
+        <a href={linkToGithub} target="_blank" className="linkToGithub">
+          {github}
+        </a>
       </div>
     </div>
   );

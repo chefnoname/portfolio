@@ -31,6 +31,10 @@
   object-fit: cover;
 }
 
+#aboutMe pre {
+  display: inline-block;
+}
+
 .downloadCV {
   position: relative;
   top: 30px;

@@ -44,9 +44,9 @@ const AboutMe = ({ theme }) => {
         <div className="descriptionOfMe">
           <Typography
             variant="h4"
-            sx={{ fontWeight: "bolder", color: "white", mb: 2 }}
+            sx={{ fontWeight: "bolder", color: "white", mb: 1 }}
           >
-            Who is abdiWali?
+            Who is <pre>abdiWali</pre>?
           </Typography>
           <Typography
             variant="subtitle2"
@@ -66,7 +66,6 @@ const AboutMe = ({ theme }) => {
             <br />I like to think of myself as someone who is very comfortable
             with being uncomfortable and I find discomfort in comfort.
           </Typography>
-          {/* <Pill theme={theme} pillTxt="DOWNLOAD CV +" /> */}
           <div
             id="pill"
             onMouseEnter={handleMouseEnter}

@@ -5,6 +5,7 @@ import ReactCardFlipper from "react-card-flipper";
 import Aos from "aos";
 import { useEffect, useState } from "react";
 import { BsGithub } from "react-icons/bs";
+// import { attachToElement } from "codemirror-console-ui";
 
 import "./AlgorithimCard.css";
 
@@ -37,6 +38,8 @@ const AlgorithimCard = ({
     "pillHighlightConcrete",
   ];
 
+  // const codeBlock = document.querySelector("code");
+
   const handleMouseEnter = () => {
     let pill = document.getElementById("algorithimPill");
     pill.classList.add(buttonThemeClass[colors.indexOf(theme)]);
@@ -52,6 +55,13 @@ const AlgorithimCard = ({
 
     setNewThemeClass(themeClass[colors.indexOf(theme)]);
   }, []);
+
+  // codemirror console
+
+  // attachToElement(codeBlock, codeBlock.textContent, {
+  //   state: "open", // open or closed
+  //   scrollIntoView: true,
+  // });
 
   return (
     <div data-aos="fade-up" className="algorithimCardContainer">
@@ -71,6 +81,7 @@ const AlgorithimCard = ({
             }}
             className="react-codemirror2 console"
           />
+
           <Pill theme={theme} pillTxt="CLICK FOR GITHUB LINK" />
         </div>
         <div className="backCard">
