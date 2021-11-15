@@ -5,6 +5,7 @@
   /* background-color: orangered; */
   margin-left: 30px;
 }
+
 .testimonials {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -13,12 +14,12 @@
   display: flex;
   justify-content: space-evenly;
 }
+
 .testimonyText {
   width: 70%;
 }
 
-.quoteLeft,
-.quoteRight {
+.quoteLeft, .quoteRight {
   position: relative;
   font-size: 30px;
 }
@@ -39,52 +40,26 @@
     margin-left: 0px;
     width: 100%;
   }
-
   .testimonyText {
     margin-right: 20px;
   }
-
   .quoteRight {
     top: 150px;
   }
-
   .author {
     margin-left: 10px;
   }
-
   .authorNameMediaQuery {
     margin-left: 200px !important;
   }
-
   .credentialsNameMediaQuery {
     margin-left: 10px !important;
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1024px) {
-  /* .testimonialContainer {
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+  .testimonialContainer {
     margin-left: 0px;
     width: 100%;
-  }
-
-  .testimonyText {
-    margin-right: 20px;
-  }
-
-  .quoteRight {
-    top: 150px;
-  } 
-  
-  .author {
-    margin-left: 10px;
-  }
-  */
-
-  .authorNameMediaQuery {
-    margin-left: 300px !important;
-  }
-
-  .credentialsNameMediaQuery {
-    margin-left: 220px !important;
   }
 }
