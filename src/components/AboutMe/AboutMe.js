@@ -61,7 +61,7 @@ const AboutMe = ({ theme }) => {
             Being a self-taught developer, I had no structured way of learning
             other than opening my laptop and cracking straight on. There's been
             many ups and downs during this journey but I've climbed many hills
-            and have come out of the depths of Darius victorious.
+            and have come out of the depths of Darius victorious!
             <br />
             <br />I like to think of myself as someone who is very comfortable
             with being uncomfortable and I find discomfort in comfort.

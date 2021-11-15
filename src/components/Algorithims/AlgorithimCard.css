@@ -52,7 +52,7 @@ a:hover {
 }
 
 .console ::-webkit-scrollbar {
-  display: block;
+  display: none;
 }
 
 #algortihimPill {

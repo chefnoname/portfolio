@@ -12,7 +12,7 @@ const CodeMirrorConsole = () => {
   const codeRef = useRef();
 
   const index = {
-    zIndex: 10,
+    zIndex: 110,
   };
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const CodeMirrorConsole = () => {
   }, []);
 
   return (
-    <div style={index}>
+    <div className="codeMirrorConsole">
       <code ref={codeRef}></code>
     </div>
   );

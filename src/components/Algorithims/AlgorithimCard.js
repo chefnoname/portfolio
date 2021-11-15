@@ -40,16 +40,6 @@ const AlgorithimCard = ({
 
   // const codeBlock = document.querySelector("code");
 
-  const handleMouseEnter = () => {
-    let pill = document.getElementById("algorithimPill");
-    pill.classList.add(buttonThemeClass[colors.indexOf(theme)]);
-  };
-
-  const handleMouseLeave = () => {
-    let pill = document.getElementById("algorithimPill");
-    pill.classList.remove(buttonThemeClass[colors.indexOf(theme)]);
-  };
-
   useEffect(() => {
     Aos.init({ duration: 1500 });
 

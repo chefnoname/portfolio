@@ -4,6 +4,10 @@
   justify-content: space-evenly;
 }
 
+.codeMirrorConsole {
+  z-index: 200;
+}
+
 @media screen and (min-width: 320px) and (max-width: 430px) {
   .algortihimsMediaQuery {
     margin-top: -30px !important;
