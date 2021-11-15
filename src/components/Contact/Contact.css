@@ -5,6 +5,7 @@
   width: 500px;
   /* height: 300px; */
 }
+
 .contactLinks {
   position: absolute;
   display: flex;
@@ -59,11 +60,28 @@
   .seeMore {
     left: -40px;
     top: 170px;
+    width: 200px;
   }
   .contactsMediaQueries {
     font-size: 20px !important;
     width: 300px !important;
     margin-left: 45px !important;
+  }
+  .contactLinks {
+    margin-left: 50px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 420px) {
+  .seeMore {
+    left: 0px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 750px) {
+  .seeMore {
+    left: 20px;
   }
 }
 
@@ -77,7 +95,6 @@
     width: 470px !important;
     margin-left: 45px !important;
   }
-
   .contactLinks {
     width: 585px;
     margin-top: 20px;
