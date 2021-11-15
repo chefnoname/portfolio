@@ -93,7 +93,6 @@ const Projects = ({ theme }) => {
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,
     ReactIcon: <SiReact />,
-    githubIcon: <BsGithub />,
   };
 
   const PROJECT_ARR = [

@@ -18,10 +18,10 @@ const App = () => {
     <>
       <NavTabs theme={randomColor} />
       <AboutMe theme={randomColor} />
-      {/* <Projects theme={randomColor} /> */}
-      {/* <Algorithims theme={randomColor} /> */}
-      {/* <Contact theme={randomColor} /> */}
-      <CodeMirrorConsole />
+      <Projects theme={randomColor} />
+      <Algorithims theme={randomColor} />
+      <Contact theme={randomColor} />
+      {/* <CodeMirrorConsole /> */}
     </>
   );
 };
