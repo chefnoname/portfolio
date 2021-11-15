@@ -5,7 +5,9 @@ import ReactCardFlipper from "react-card-flipper";
 import Aos from "aos";
 import { useEffect, useState } from "react";
 import { BsGithub } from "react-icons/bs";
+import { useMediaQuery } from 'react-responsive'
 // import { attachToElement } from "codemirror-console-ui";
+
 
 import "./AlgorithimCard.css";
 
@@ -22,6 +24,7 @@ const AlgorithimCard = ({
   theme,
 }) => {
   const [newThemeClass, setNewThemeClass] = useState("");
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 760px)' });
 
   const colors = ["#0a1929", "#161C14", "#4F2F2F", "#262f35"];
   const themeClass = [
@@ -38,7 +41,6 @@ const AlgorithimCard = ({
     "pillHighlightConcrete",
   ];
 
-  // const codeBlock = document.querySelector("code");
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
@@ -46,35 +48,18 @@ const AlgorithimCard = ({
     setNewThemeClass(themeClass[colors.indexOf(theme)]);
   }, []);
 
-  // codemirror console
-
-  // attachToElement(codeBlock, codeBlock.textContent, {
-  //   state: "open", // open or closed
-  //   scrollIntoView: true,
-  // });
 
   return (
     <div data-aos="fade-up" className="algorithimCardContainer">
       <ReactCardFlipper
-        width="500px"
+        width={isTabletOrMobile ? "300px" : "500px"}
         height="400px"
         behavior="click"
         innerCardClass={`algorithimCard ${newThemeClass}`}
       >
         <div className="frontCard">
-          <CodeMirror
-            value={img}
-            options={{
-              mode: "javascript",
-              theme: "material",
-              lineNumbers: false,
-            }}
-            className="react-codemirror2 console"
-          />
 
-          <Pill theme={theme} pillTxt="CLICK FOR GITHUB LINK" />
-        </div>
-        <div className="backCard">
+
           <Typography
             variant="subtitle1"
             sx={{
@@ -94,19 +79,43 @@ const AlgorithimCard = ({
               fontStyle: "italic",
               color: "white",
               textAlign: "center",
-              mt: 7,
-              mb: 5,
               ml: 7,
-              width: "400px",
+              width: "400px"
             }}
+            marginTop={isTabletOrMobile ? '10px' : '50px'}
+            marginBottom={isTabletOrMobile ? '-10px' : '50px'}
+            className='exerciseDetail'
           >
             {exerciseDetail}
           </Typography>
+
+          <div className='algorithimPill'>
+
+
+            <Pill theme={theme} pillTxt="SEE SOLUTION" />
+          </div>
+
+        </div>
+        <div className="backCard">
+
+          <CodeMirror
+            value={img}
+            options={{
+              mode: "javascript",
+              theme: "material",
+              lineNumbers: false,
+            }}
+            className="react-codemirror2 console"
+          />
+
           <div className="githubLink">
             <a href={githubLink} target="_blank">
               <BsGithub className="linkToGithub" />
             </a>
           </div>
+
+
+
         </div>
       </ReactCardFlipper>
     </div>
