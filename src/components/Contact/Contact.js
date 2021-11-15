@@ -1,4 +1,5 @@
 import Typography from "@mui/material/Typography";
+import { useMediaQuery } from 'react-responsive'
 
 import {
   Animator,
@@ -16,6 +17,10 @@ import jsCertificate from "./cardSnippets/jsCertificate.png";
 import codeQuestion1 from "./cardSnippets/codeQuestion1.png";
 import firebase from "./cardSnippets/firebase.png";
 const Contact = ({ theme }) => {
+
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 760px)' });
+
+
   return (
     <div id="contact">
       <div className="seeMore">
@@ -52,7 +57,7 @@ const Contact = ({ theme }) => {
         </div>
       </div>
       <ScrollContainer>
-        <ScrollPage page={8}>
+        <ScrollPage page={isTabletOrMobile ? 10 : 8}>
           <div
             style={{
               display: "flex",
