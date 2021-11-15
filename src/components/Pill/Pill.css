@@ -10,6 +10,13 @@
   border-radius: 10px;
 }
 
+/* @media screen and (min-width: 320px) and (max-width: 430px) {
+  #algorithimPiil {
+    width: 250px !important;
+    left: 15px;
+  }
+} */
+
 /* #pill:hover {
   cursor: pointer;
   background-position: left;
