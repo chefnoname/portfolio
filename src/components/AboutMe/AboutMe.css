@@ -3,21 +3,18 @@
   padding: 80px 0;
   z-index: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .descriptionOfMe {
   width: 40%;
-  left: 60px;
-  position: relative;
-  top: 80px;
   text-align: center;
+  margin-right: 150px;
 }
 
 .pictureOfMe {
-  position: relative;
-  top: 20px;
-  right: 180px;
+  z-index: 10;
+  margin-right: 120px;
   background: inherit;
   height: 500px;
   width: 300px;
@@ -33,19 +30,6 @@
 
 #aboutMe pre {
   display: inline-block;
-}
-
-.downloadCV {
-  position: relative;
-  top: 30px;
-  left: 100px;
-  height: 40px;
-  background: white;
-  /* background: linear-gradient(to left, white 50%, #0a1929 50%) right; */
-  background-size: 200%;
-  width: 300px;
-  border: 1px solid white;
-  border-radius: 10px;
 }
 
 .pillHighlightBlue {
@@ -87,15 +71,15 @@
   /* left: 10px; */
   /* background-color: orangered; */
 }
+
 .particles {
   position: absolute;
   z-index: 10;
 }
 
 #pill {
-  position: relative;
-  top: 30px;
-  left: 100px;
+  margin-top: 40px;
+  margin-left: 140px;
   height: 40px;
   background: white;
   background-size: 200%;
@@ -103,6 +87,7 @@
   border: 1px solid white;
   border-radius: 10px;
 }
+
 #pill:hover {
   cursor: pointer;
   background-position: left;
@@ -110,24 +95,18 @@
 
 @media screen and (min-width: 320px) and (max-width: 430px) {
   #aboutMe {
-    display: flex;
     flex-direction: column-reverse;
   }
-
   .descriptionOfMe {
     width: 85%;
-    left: 30px;
-    top: -30px;
+    margin-left: 25px;
+    margin-top: 30px;
   }
-
   .pictureOfMe {
-    position: relative;
-    top: -50px;
-    right: -130px;
+    margin-left: 130px;
     height: 300px;
     width: 150px;
   }
-
   .pictureOfMe img {
     height: 250px;
     width: 190px;
@@ -135,45 +114,55 @@
     margin-top: 25px;
     object-fit: contain;
   }
-
   #pill {
-    top: 50px;
-    left: -20px;
+    margin-left: -15px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 420px) {
+  #pill {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 750px) {
+  .pictureOfMe {
+    margin-left: 170px;
+  }
+  #pill {
+    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 760px) and (max-width: 1024px) {
-  /* #aboutMe {
-    display: flex;
-    flex-direction: column-reverse;
-  } */
-
-  .descriptionOfMe {
-    /* width: 85%; */
-    /* left: 30px; */
-    top: -10px;
+  #aboutMe {
+    justify-content: space-between;
   }
-
+  .descriptionOfMe {
+    width: 42%;
+    margin-left: 20px;
+  }
   .introOfMe {
     font-size: 14.5px !important;
   }
-
   .pictureOfMe {
-    position: relative;
-    top: -50px;
-    right: 20px;
+    margin-right: 20px;
     height: 400px;
     width: 280px;
   }
-
   .pictureOfMe img {
     height: 350px;
     width: 260px;
     margin-left: -25px;
     object-fit: contain;
   }
-
   #pill {
-    left: -10px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  #pill {
+    margin-left: 70px;
   }
 }
