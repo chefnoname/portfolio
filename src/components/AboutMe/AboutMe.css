@@ -7,6 +7,7 @@
 }
 
 .descriptionOfMe {
+  /* max-width: 1440px; */
   width: 40%;
   text-align: center;
   margin-right: 150px;
@@ -60,10 +61,11 @@
   transition: 0.5s ease-out !important;
 }
 
+/* 
 .downloadCV:hover {
   cursor: pointer;
   background-position: left;
-}
+} */
 
 .testimonyAhmed {
   position: relative;
@@ -78,8 +80,8 @@
 }
 
 #pill {
-  margin-top: 40px;
-  margin-left: 110px;
+  margin: auto;
+  /* margin-left: 110px; */
   height: 40px;
   background: white;
   background-size: 200%;
@@ -91,6 +93,12 @@
 #pill:hover {
   cursor: pointer;
   background-position: left;
+}
+
+.aboutMePill {
+  max-width: 1440px;
+  margin: 40px 0px auto;
+  height: 60px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 430px) {
@@ -120,6 +128,9 @@
 }
 
 @media screen and (min-width: 375px) and (max-width: 420px) {
+  .pictureOfMe {
+    margin-left: 150px;
+  }
   #pill {
     margin-left: 10px;
   }
@@ -161,8 +172,31 @@
   }
 }
 
-/* @media screen and (min-width: 1024px) and (max-width: 1439px) {
-  #pill {
-    margin-left: 70px;
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .pictureOfMe {
+    margin-right: 0;
   }
-} */
+  #pill {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 1960px) {
+  .title {
+    font-size: 40px !important;
+  }
+  .introOfMe {
+    font-size: 23px !important;
+  }
+  #pill {
+    /* margin-top: 40px; */
+    /* margin-left: 100px; */
+    height: 50px;
+    background-size: 200%;
+    width: 800px;
+  }
+  .downloadCV {
+    margin-top: 3px !important;
+    font-size: 20px !important;
+  }
+}
