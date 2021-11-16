@@ -11,7 +11,7 @@ const TestimonialCard = ({ testimony, author, credentials, theme }) => {
     <div className="testimonialContainer">
       <div className="testimonials">
         <ImQuotesLeft className="quoteLeft" style={bgColor} />
-        <div className="testimonyText">
+        <div className="testimonyTextContainer">
           <Typography
             variant="h5"
             sx={{
@@ -20,6 +20,7 @@ const TestimonialCard = ({ testimony, author, credentials, theme }) => {
               width: "95%",
               textAlign: "center",
             }}
+            className='testimonyText'
           >
             {testimony}
           </Typography>
