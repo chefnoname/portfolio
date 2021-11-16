@@ -17,7 +17,7 @@ const NavTabs = ({ theme }) => {
   const TAB_PROPS = [
     ["About", "#aboutMe"],
     ["Projects", "#projects"],
-    ["Algorithims", "#algorithims"],
+    ["Algorithms", "#algorithms"],
     ["Contact", "#contact"],
   ];
 
@@ -25,14 +25,14 @@ const NavTabs = ({ theme }) => {
     <Box
       sx={{
         width: "100%",
-        display: "flex",
-        justifyContent: "space-between",
+        // display: "flex",
+        // justifyContent: "space-between",
         background: `linear-gradient(90deg, ${theme} 80%, rgba(100,120,124,1) 100%)`,
         position: "fixed",
         zIndex: "100",
       }}
     >
-      <img src={logo} className="App-logo" alt="" />
+      {/* <img src={logo} className="App-logo" alt="" /> */}
       <Tabs value={value} onChange={handleChange} aria-label="nav tabs">
         {TAB_PROPS.map(([label, href]) => (
           <Tab
@@ -44,7 +44,7 @@ const NavTabs = ({ theme }) => {
               fontWeight: "bolder",
               color: "white",
               scrollBehaviour: "smooth",
-              mt: 1,
+              m: '0 auto',
             }}
             className="inactive"
           />
