@@ -82,6 +82,12 @@
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 320px) {
+  #pill {
+    width: 200px;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 430px) {
   .projectCard {
     display: flex;
@@ -227,7 +233,7 @@
     /* background-color: aqua; */
     margin-left: 20px;
     font-size: 35px;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
   }
   .projectTitleMediaQuery {
     margin-left: 50px !important;
