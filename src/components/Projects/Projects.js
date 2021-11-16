@@ -34,9 +34,9 @@ const Projects = ({ theme }) => {
     title: "Tribute Page",
     nameOfProject: "Holy Sites in Islam",
     projectInfoTop:
-      "As a proud Muslim, I wanted to pay homage to some of the well known holy sites of my faith.",
+      "As a proud Muslim, I wanted to pay homage to some of the well known holy sites of my faith. Each image links to a separate page.",
     projectInfoBottom:
-      "Using the GoogleMaps API, I was able to pin the location of each Holy Site.",
+      "Using the GoogleMaps API, I was able to pin the location of each Holy Site. I also linked to the official Wikipedia document of the site.",
     projectPreview:
       "https://codesandbox.io/embed/blissful-austin-5ic4y?fontsize=14&hidenavigation=1&theme=dark",
     linkToGithub: "https://github.com/chefnoname/FCC-Tribute-Page1",
