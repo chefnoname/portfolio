@@ -3,15 +3,13 @@
   justify-content: space-between;
   width: 95%;
   height: 500px;
-  margin-left: 30px;
-  margin-bottom: 20px;
-  /* background-color: #0a1929; */
+  max-width: 1440px;
+  margin: 20px auto;
 }
 
 .projectDetails {
   display: flex;
   flex-direction: column;
-  /* background-color: greenyellow; */
   width: 400px;
   margin-top: 70px;
   margin-left: 40px;
@@ -125,8 +123,10 @@
     width: 250px !important;
   }
   .icons {
-    width: 60%;
+    /* width: 55%; */
     margin-right: 70px;
+    padding: 15px 50px;
+    /* background-color: aqua; */
   }
 }
 
@@ -140,6 +140,10 @@
   .projectDetailMediaQuery {
     margin-left: 60px !important;
     /* width: 250px !important; */
+  }
+  .icons {
+    /* margin-left: 90px; */
+    padding: 20px 80px;
   }
 }
 
@@ -156,35 +160,80 @@
     /* width: 250px !important; */
   }
   .icons {
-    margin-left: 90px;
+    /* margin-left: 90px; */
+    padding: 50px 100px;
   }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1023px) {
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+  .projectCard {
+    justify-content: start;
+  }
+  .projectScreenshot {
+    /* background-color: #6e10ea; */
+    margin-right: 50px;
+  }
   .projectScreenshot iframe {
+    height: 250px;
+    width: 403px;
+    margin-bottom: 70px;
+  }
+  /* .projectScreenshot iframe {
     height: 300px;
     width: 400px;
     object-fit: contain;
     border: 0;
-  }
+  } */
   .projectDetails {
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-right: 25px;
+    /* background-color: #e44d26; */
+    /* text-align: center !important; */
+    width: 300px;
   }
   .projectTitleMediaQuery {
-    width: 150px !important;
-    text-align: center !important;
     font-size: 16px !important;
+    width: 150px !important;
     margin-left: 40px !important;
   }
   .projectNameMediaQuery {
-    margin-right: 55px !important;
+    margin-right: 30px !important;
     font-size: 16px !important;
   }
   .projectDetailMediaQuery {
     width: 250px !important;
   }
   .icons {
-    margin-left: 0px;
+    width: 170px;
+    text-align: right;
+    /* background-color: aqua; */
+    margin-left: 20px;
+    font-size: 35px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .projectScreenshot iframe {
+    height: 450px;
+    width: 553px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .icons {
+    width: 170px;
+    text-align: right;
+    /* background-color: aqua; */
+    margin-left: 20px;
+    font-size: 35px;
+    padding: 10px 20px;
+  }
+  .projectTitleMediaQuery {
+    margin-left: 50px !important;
+  }
+  .projectNameMediaQuery {
+    margin-left: 10px !important;
   }
 }
 
