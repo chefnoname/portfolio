@@ -83,7 +83,7 @@ const Algorithims = ({ theme }) => {
   };
 
   return (
-    <div data-aos="fade-up" id="algorithims">
+    <div data-aos="fade-up" id="algorithms">
       <Typography
         variant="h2"
         sx={{
@@ -96,7 +96,7 @@ const Algorithims = ({ theme }) => {
         }}
         className="titleMediaQuery algortihimsMediaQuery"
       >
-        ALGORITHIMS
+        ALGORITHMS
       </Typography>
       <div className="algorithimCardDisplay">
         {ALGORITHIM_ARR.map((algorithim, i) => (
