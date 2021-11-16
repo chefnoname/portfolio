@@ -4,6 +4,8 @@
   width: 95%;
   /* background-color: orangered; */
   margin-left: 30px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .testimonials {
@@ -15,7 +17,7 @@
   justify-content: space-evenly;
 }
 
-.testimonyText {
+.testimonyTextContainer {
   width: 70%;
 }
 
@@ -57,9 +59,32 @@
   }
 }
 
+@media screen and (min-width: 765px) and (max-width: 1022px) {
+  .authorNameMediaQuery {
+    margin-left: 450px !important;
+  }
+  .credentialsNameMediaQuery {
+    margin-left: 380px !important;
+  }
+}
+
 @media screen and (min-width: 1024px) and (max-width: 1400px) {
   .testimonialContainer {
     margin-left: 0px;
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .testimonyText {
+    font-size: 30px !important;
+  }
+  .authorNameMediaQuery, .credentialsNameMediaQuery {
+    font-size: 25px !important;
+  }
+  .testimonialContainer {
+    /* background-color: brown; */
+    height: 450px;
+    /* margin-bottom: 30px; */
   }
 }
