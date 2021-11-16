@@ -45,6 +45,7 @@ const AboutMe = ({ theme }) => {
           <Typography
             variant="h4"
             sx={{ fontWeight: "bolder", color: "white", mb: 1 }}
+            className='title'
           >
             Who is <pre>abdiWali</pre>?
           </Typography>
@@ -66,25 +67,27 @@ const AboutMe = ({ theme }) => {
             <br />I like to think of myself as someone who is very comfortable
             with being uncomfortable and I find discomfort in comfort.
           </Typography>
-          <div
-            id="pill"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            className="aboutMePill"
-          >
-            <Typography
-              variant="subtitle1"
-              sx={{
-                color: `${theme}`,
-                fontWeight: "bolder",
-                textAlign: "center",
-                position: "relative",
-                top: "5px",
-                "&:hover": { color: "white" },
-              }}
+          <div className="aboutMePill">
+            <div
+              id="pill"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             >
-              DOWNLOAD CV +
-            </Typography>
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  color: `${theme}`,
+                  fontWeight: "bolder",
+                  textAlign: "center",
+                  position: "relative",
+                  top: "5px",
+                  "&:hover": { color: "white" },
+                }}
+                className='downloadCV'
+              >
+                DOWNLOAD CV +
+              </Typography>
+            </div>
           </div>
         </div>
         <div className="pictureOfMe">
