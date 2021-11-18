@@ -13,6 +13,7 @@
     "aos": "^2.3.4",
     "codemirror": "^5.63.3",
     "codemirror-console-ui": "^2.0.5",
+    "formik": "^2.2.9",
     "react": "^17.0.2",
     "react-card-flipper": "^1.0.1",
     "react-codemirror2": "^7.2.1",
@@ -22,7 +23,8 @@
     "react-scripts": "4.0.3",
     "react-scroll-motion": "^0.2.1",
     "react-tsparticles": "^1.37.2",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",

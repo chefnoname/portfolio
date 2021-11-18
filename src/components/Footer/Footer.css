@@ -1,72 +1,37 @@
 .footerContainer {
   width: 100%;
-  /* background-color: brown; */
   height: 600px;
   z-index: 300;
-  margin-top: 20px;
+  margin-top: 60px;
 }
 
-.footerStartProj {
-  position: relative;
-  top: 80px;
-  margin: 0 auto;
-  max-width: 70%;
-  min-height: 100px;
-  background-color: #4d5a6f;
-  border-radius: 10px;
-  box-shadow: 0 3px 5px black;
+.formContainer {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 30px 40px;
-  align-items: center;
-}
-
-.startProject {
-  height: 40px;
-}
-
-.needFreelance {
-  height: 40px;
-  max-width: 35%;
-  margin-bottom: 20px;
-}
-
-.letsDoThis {
-  height: 60px;
-  width: 180px;
-  border: 3px solid white;
-  border-radius: 50px;
-  transition: 0.7s ease-in-out;
-}
-
-.letsDoThis:hover {
-  background-color: white;
-  cursor: pointer;
-}
-
-.letsDoThis:hover > .letsDoThisFont {
-  color: #4d5a6f !important;
-}
-
-.footerBackground {
-  height: 500px;
+  justify-content: space-around;
+  /* align-items: center; */
+  /* padding: 20px; */
   width: 100%;
-  overflow-y: hidden;
-  margin: 20px auto;
+  /* background-color: crimson; */
 }
 
 .contactMe {
-  height: 100%;
-  max-width: 30%;
-  /* margin-top: 80px; */
-  margin: 60px auto;
+  height: 500px;
+  width: 400px;
+  margin: 50px auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  flex-direction: column;
   /* background-color: brown; */
-  /* overflow-y: hidden; */
+}
+
+.contactForm {
+  margin-top: 120px;
+  /* align-items: center; */
+  height: 300px;
+  width: 100px;
+  flex-grow: 2;
+  /* background-color: crimson; */
 }
 
 .logo {
@@ -86,9 +51,9 @@
 
 .linksToLinkedIn {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  width: 140px;
+  width: 200px;
   /* background-color: tomato; */
   font-size: 50px;
   color: white;
