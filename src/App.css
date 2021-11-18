@@ -12,6 +12,9 @@ body {
   height: 6vmin;
   pointer-events: none;
   padding: 10px 20px;
+  /* animation: App-logo-spin 100s; */
+  animation: App-logo-spin 5s linear infinite normal;
+  /* animation: App-logo-spin infinite; */
 }
 
 .App-header {

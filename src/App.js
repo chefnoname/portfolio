@@ -2,7 +2,7 @@ import NavTabs from "./components/NavTabs/NavTabs";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Algorithims from "./components/Algorithims/Algorithims";
-import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 import "./App.css";
 
@@ -19,7 +19,7 @@ const App = () => {
       <AboutMe theme={randomColor} />
       <Projects theme={randomColor} />
       <Algorithims theme={randomColor} />
-      <Contact theme={randomColor} />
+      <Footer theme={randomColor} />
     </>
   );
 };

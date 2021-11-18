@@ -92,6 +92,7 @@ const Projects = ({ theme }) => {
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,
     JSIcon: <SiJavascript />,
+    githubIcon: <BsGithub />,
     ReactIcon: <SiReact />,
   };
 

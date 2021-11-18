@@ -31,7 +31,7 @@ const AboutMe = ({ theme }) => {
 
   const ahmedTestimonyObj = {
     testimony:
-      "One of the best react projects I've seen on a Junior Developers portfolio",
+      "One of the best React projects I've seen on a Junior Developers portfolio",
     author: "Ahmed A. Gadir",
     credentials: "Mid-Level JS Developer, AG Grid",
   };

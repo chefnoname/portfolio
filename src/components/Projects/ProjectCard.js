@@ -77,11 +77,9 @@ const ProjectCard = ({
           <span className="htmlIcon">{html}</span>
           <span className="cssIcon">{css}</span>
           <span className="javaScriptIcon">{javaScript}</span>
-          <span className="reactIcon">{react}</span>
           <span className="bootstrapIcon">{bootstrap}</span>
+          <span className="reactIcon">{react}</span>
         </div>
-
-        <div></div>
       </div>
 
       <div className="projectScreenshot">
@@ -89,7 +87,7 @@ const ProjectCard = ({
           src={projectPreview}
           title="youtube_proj"
           allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+          sandbox="allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
         ></iframe>
         <a href={linkToGithub} target="_blank" className="linkToGithub">
           {github}
@@ -100,5 +98,3 @@ const ProjectCard = ({
 };
 
 export default ProjectCard;
-
-//  https://codesandbox.io/embed/github/chefnoname/youtube_clone/tree/main/?fontsize=14&theme=dark&view=preview
