@@ -1,4 +1,5 @@
-import { Formik, Form } from "formik";
+import { Formik, Form, setSubmitting, resetForm } from "formik";
+import emailjs, { send } from "emailjs-com";
 
 import { Grid } from "@mui/material";
 import * as Yup from "yup";
@@ -22,6 +23,21 @@ const FORM_VALIDATION = Yup.object().shape({
     .required("Please fill out field"),
 });
 
+const serviceID = "service_iav8gcg";
+const templateID = "template_x4qk6id";
+const userID = "user_qbWy8wDb0S687SdH5mdFC";
+
+const SendEmail = (object) => {
+  emailjs.send(serviceID, templateID, object, userID).then(
+    (result) => {
+      console.log(result.text);
+    },
+    (error) => {
+      console.log(error.text);
+    }
+  );
+};
+
 const ContactForm = () => {
   return (
     <Formik
@@ -29,8 +45,15 @@ const ContactForm = () => {
         ...INITIAL_FORM_STATE,
       }}
       validationSchema={FORM_VALIDATION}
-      onSubmit={(values) => {
-        console.log(values);
+      onSubmit={(values, { setSubmitting, resetForm }) => {
+        SendEmail(values);
+        console.log("submit", values);
+
+        alert(
+          "Thank you for contacting me! I try to respond to E-Mails in a few hours!"
+        );
+        setSubmitting(false);
+        resetForm();
       }}
     >
       <Form>

@@ -20,6 +20,7 @@ const Footer = ({ theme }) => {
                 color: "white",
                 fontWeight: "light",
                 textAlign: "center",
+                letterSpacing: "1px",
               }}
             >
               Contact
@@ -49,7 +50,18 @@ const Footer = ({ theme }) => {
           <ContactForm />
         </div>
       </div>
-      {/* <div className="copryright">COPYRIGHT</div> */}
+      <div className="copyright">
+        <Typography
+          variant="subtitle2"
+          sx={{
+            color: "white",
+            mb: 3,
+            //   textAlign: "center",
+          }}
+        >
+          Hand-coded by me &copy; 2021
+        </Typography>
+      </div>
     </div>
   );
 };
@@ -84,13 +96,3 @@ export default Footer;
 //       <BsLinkedin />
 //     </a>
 //   </div>
-//   <Typography
-//     variant="subtitle2"
-//     sx={{
-//       color: "white",
-//       mb: 3,
-//       //   textAlign: "center",
-//     }}
-//   >
-//     Hand-coded by me &copy; 2021
-//   </Typography>
