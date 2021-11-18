@@ -219,7 +219,7 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .projectScreenshot iframe {
     height: 450px;
     width: 553px;

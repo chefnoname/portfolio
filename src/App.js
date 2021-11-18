@@ -3,7 +3,6 @@ import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Algorithims from "./components/Algorithims/Algorithims";
 import Contact from "./components/Contact/Contact";
-import CodeMirrorConsole from "./components/Algorithims/CodeMirrorConsole";
 
 import "./App.css";
 
@@ -21,7 +20,6 @@ const App = () => {
       <Projects theme={randomColor} />
       <Algorithims theme={randomColor} />
       <Contact theme={randomColor} />
-      {/* <CodeMirrorConsole /> */}
     </>
   );
 };
