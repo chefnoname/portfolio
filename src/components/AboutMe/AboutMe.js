@@ -1,6 +1,5 @@
 import Typography from "@mui/material/Typography";
 import TestimonialCard from "../Testimonials/TestimonialCard";
-import Pill from "../Pill/Pill";
 import ParticlesBg from "../ParticlesBg/ParticlesBg";
 import "./AboutMe.css";
 import img from "./assets/IMG_1566.jpg";
@@ -45,7 +44,7 @@ const AboutMe = ({ theme }) => {
           <Typography
             variant="h4"
             sx={{ fontWeight: "bolder", color: "white", mb: 1 }}
-            className='title'
+            className="title"
           >
             Who is <pre>abdiWali</pre>?
           </Typography>
@@ -68,26 +67,28 @@ const AboutMe = ({ theme }) => {
             with being uncomfortable and I find discomfort in comfort.
           </Typography>
           <div className="aboutMePill">
-            <div
-              id="pill"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              <Typography
-                variant="subtitle1"
-                sx={{
-                  color: `${theme}`,
-                  fontWeight: "bolder",
-                  textAlign: "center",
-                  position: "relative",
-                  top: "5px",
-                  "&:hover": { color: "white" },
-                }}
-                className='downloadCV'
+            <a href="./assets/IMG_1566.jpg" download>
+              <div
+                id="pill"
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
-                DOWNLOAD CV +
-              </Typography>
-            </div>
+                <Typography
+                  variant="subtitle1"
+                  sx={{
+                    color: `${theme}`,
+                    fontWeight: "bolder",
+                    textAlign: "center",
+                    position: "relative",
+                    top: "5px",
+                    "&:hover": { color: "white" },
+                  }}
+                  className="downloadCV"
+                >
+                  DOWNLOAD CV +
+                </Typography>
+              </div>
+            </a>
           </div>
         </div>
         <div className="pictureOfMe">

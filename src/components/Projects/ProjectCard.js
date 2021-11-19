@@ -77,8 +77,9 @@ const ProjectCard = ({
           <span className="htmlIcon">{html}</span>
           <span className="cssIcon">{css}</span>
           <span className="javaScriptIcon">{javaScript}</span>
-          <span className="bootstrapIcon">{bootstrap}</span>
-          <span className="reactIcon">{react}</span>
+          <span className={bootstrap ? "bootstrapIcon" : "reactIcon"}>
+            {bootstrap || react}
+          </span>
         </div>
       </div>
 

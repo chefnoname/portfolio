@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
 import { useFormikContext } from "formik";
 
-const ContactBtn = ({ children, ...otherProps }) => {
+const ContactBtn = ({ children }) => {
   const { submitForm } = useFormikContext();
 
   const handleSubmit = () => {

@@ -1,9 +1,6 @@
-import logo from "../../logo.png";
-import Box from "@mui/material/Box";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+import { Box, Tabs, Tab } from "@mui/material";
 import { useState } from "react";
-
+import Scrollspy from "react-scrollspy";
 import "./NavTabs.css";
 
 const NavTabs = ({ theme }) => {
@@ -25,14 +22,15 @@ const NavTabs = ({ theme }) => {
     <Box
       sx={{
         width: "100%",
-        // display: "flex",
-        // justifyContent: "space-between",
         background: `linear-gradient(90deg, ${theme} 80%, rgba(100,120,124,1) 100%)`,
         position: "fixed",
         zIndex: "100",
       }}
     >
-      {/* <img src={logo} className="App-logo" alt="" /> */}
+      {/* <Scrollspy
+        items={["aboutMe", "projects", "algorithms", "contact"]}
+        currentClassName="inactive"
+      > */}
       <Tabs value={value} onChange={handleChange} aria-label="nav tabs">
         {TAB_PROPS.map(([label, href]) => (
           <Tab
@@ -44,12 +42,13 @@ const NavTabs = ({ theme }) => {
               fontWeight: "bolder",
               color: "white",
               scrollBehaviour: "smooth",
-              m: '0 auto',
+              m: "0 auto",
             }}
             className="inactive"
           />
         ))}
       </Tabs>
+      {/* </Scrollspy> */}
     </Box>
   );
 };

@@ -2,10 +2,13 @@ import ContactForm from "./ContactForm";
 import Typography from "@mui/material/Typography";
 import logo from "../../logo.png";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { useMediaQuery } from "react-responsive";
 
 import "./Footer.css";
 
 const Footer = ({ theme }) => {
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 760px)" });
+
   const boxColor = {
     background: theme,
   };
@@ -13,19 +16,21 @@ const Footer = ({ theme }) => {
     <div className="footerContainer" id="contact" style={boxColor}>
       <div className="formContainer">
         <div className="contactMe">
-          <div className="motto">
-            <Typography
-              variant="h2"
-              sx={{
-                color: "white",
-                fontWeight: "light",
-                textAlign: "center",
-                letterSpacing: "1px",
-              }}
-            >
-              Contact
-            </Typography>
-          </div>
+          {!isTabletOrMobile && (
+            <div className="motto">
+              <Typography
+                variant="h2"
+                sx={{
+                  color: "white",
+                  fontWeight: "light",
+                  textAlign: "center",
+                  letterSpacing: "1px",
+                }}
+              >
+                Contact
+              </Typography>
+            </div>
+          )}
           <div className="linksToLinkedIn">
             <a
               className="linkToPage"
