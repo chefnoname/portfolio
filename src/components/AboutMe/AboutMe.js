@@ -3,6 +3,7 @@ import TestimonialCard from "../Testimonials/TestimonialCard";
 import ParticlesBg from "../ParticlesBg/ParticlesBg";
 import "./AboutMe.css";
 import img from "./assets/IMG_1566.jpg";
+import devCV from "./assets/FRONTEND-CV.docx";
 
 const AboutMe = ({ theme }) => {
   const bgColor = {
@@ -73,7 +74,7 @@ const AboutMe = ({ theme }) => {
             message so we can get a conversation going!
           </Typography>
           <div className="aboutMePill">
-            <a href="./assets/IMG_1566.jpg" download>
+            <a href={devCV} download>
               <div
                 id="pill"
                 onMouseEnter={handleMouseEnter}
