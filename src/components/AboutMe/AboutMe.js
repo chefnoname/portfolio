@@ -58,7 +58,7 @@ const AboutMe = ({ theme }) => {
             2020.
             <br />
             <br />
-            In life things get tough, but the get going and Front-end
+            In life things get tough, but the tough get going and Front-end
             development was no easy task. With no support of a teacher or
             classmates I had to pull myself up by my bootstraps, climb in the
             depths of Darius and emerge atop victorious.
