@@ -10,7 +10,7 @@ const TextFieldWrapper = ({ name, ...otherProps }) => {
     variant: "filled",
     InputLabelProps: { sx: { color: "white", borderRadius: "10px" } },
     inputProps: { sx: { color: "white" } },
-    sx: { borderRadius: "5px", background: "#000" },
+    sx: { borderRadius: "5px", background: "rgba(255,255,255,0.5)" },
     fullWidth: true,
   };
 
