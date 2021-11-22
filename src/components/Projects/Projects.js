@@ -23,6 +23,8 @@ const Projects = ({ theme }) => {
       "This was one of the assignments needed to complete freeCodeCamp's Responsive Web Design Course.",
     projectInfoBottom:
       "I drew inspiration from the numerous amount of times I've visited the MDN website.",
+    projectPreview:
+      "https://codesandbox.io/embed/billowing-butterfly-1kqhx?fontsize=14&theme=dark&view=preview",
     linkToGithub: "https://github.com/chefnoname/TechDocFCC",
     HTMLIcon: <DiHtml5 />,
     CSS3Icon: <DiCss3 />,

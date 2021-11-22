@@ -53,18 +53,24 @@ const AboutMe = ({ theme }) => {
             sx={{ color: "white", fontSize: "16px" }}
             className="introOfMe"
           >
-            Hi, my name is AbdiWali, or you can call me Abs! I'm a young,
-            friendly, energetic individual who started his development journey
-            in the cool, breezy autumn of 2020.
+            Hi, my name is AbdiWali, or you can call me Abs! I'm a self-taught
+            developer who started his journey in the cool, breezy autumn of
+            2020.
             <br />
             <br />
-            Being a self-taught developer, I had no structured way of learning
-            other than opening my laptop and cracking straight on. There's been
-            many ups and downs during this journey but I've climbed many hills
-            and have come out of the depths of Darius victorious!
+            In life things get tough, but the get going and Front-end
+            development was no easy task. With no support of a teacher or
+            classmates I had to pull myself up by my bootstraps, climb in the
+            depths of Darius and emerge atop victorious.
             <br />
-            <br />I like to think of myself as someone who is very comfortable
-            with being uncomfortable and I find discomfort in comfort.
+            <br />
+            I like to think of myself as someone who is very comfortable with
+            being uncomfortable and I find discomfort in comfort.
+            <br />
+            <br />
+            Here's my portfolio showcasing some of my best work so far, from
+            React applications to JavaScript algorithms, feel free to leave me a
+            message so we can get a conversation going!
           </Typography>
           <div className="aboutMePill">
             <a href="./assets/IMG_1566.jpg" download>

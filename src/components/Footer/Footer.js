@@ -19,15 +19,16 @@ const Footer = ({ theme }) => {
           {!isTabletOrMobile && (
             <div className="motto">
               <Typography
-                variant="h2"
+                variant="h3"
                 sx={{
                   color: "white",
                   fontWeight: "light",
                   textAlign: "center",
                   letterSpacing: "1px",
+                  mt: 1,
                 }}
               >
-                Contact
+                Let's get a conversation going!
               </Typography>
             </div>
           )}
